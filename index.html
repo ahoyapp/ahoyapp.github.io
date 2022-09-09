@@ -1,7 +1,7 @@
 <html>
    <head>
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-      <title>Ahoy Test - Connect to ETH</title>
+      <title>Ahoy Test - Connect to ETH - build 1005</title>
   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
 
@@ -13,7 +13,7 @@ body{
   background-size: cover;
         height: 100%;
         font-family: 'Rubik';font-size: 16px;
-    background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
+    background-image: url('https://i.giphy.com/media/3ohhwNqFMnb7wZgNnq/giphy.webp');
 }
 
 button {
@@ -85,14 +85,15 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a5;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
     border-radius: 5px;
+    display:block;
 }
 
 /*-- Inner Box CSS --*/
 .innerBox {
     background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #0dffdf;
+    box-shadow: 0px 0px 6px 0px #ff0d5200;
     border-radius: 10px;
     padding: 30px;
     font-size: 20px;
@@ -145,7 +146,7 @@ button:hover {
         }
 
         .ahoyTickerColTIME {
-            background-color: #cc43df;
+            background-color: #0B030C;
           float: left;
           min-height: 100%;
           width: 25%;
@@ -177,8 +178,8 @@ button:hover {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
   padding: 5px;
-  width: auto;
-  height: 50px;
+  width: 200px;
+  height: auto;
 }
 
 img:hover {
@@ -270,7 +271,7 @@ img:hover {
    /*-- Outer Box CSS --*/
    .outerBox {
     height: 60vh;
-    background: #00000000;
+    background: #ffffff;
     padding: 0 20px;
     margin: 50px 50px 20px;
     display: flex;
@@ -308,8 +309,8 @@ img:hover {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 2px;
   padding: 5px;
-  width: auto;
-  height: 40px;
+  width: 175px;
+  height: auto;
 }
 
 img:hover {
@@ -384,14 +385,26 @@ img:hover {
   box-shadow: inset 0 0 0 50px #D80286;
 }
 
+
+
 }
 
+.tip-button {
+    width:200px;
+    height:auto;
+
+}
 
 
 </style>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
+
+ <!-- ETH BODY -->
+ <!-- ETH BODY -->
+  <!-- ETH BODY -->
+   <!-- ETH BODY --> 
  <!-- ETH BODY -->
 <body>
 
@@ -400,14 +413,15 @@ img:hover {
             <a target="_blank" href="https://www.ahoy.ooo">
                 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
                             </a>
-            <p class="superFontBig">Support Ahoy Directly using the power of Ethereum</p>
+            <p class="superFont">Support your favorite artist on Ahoy, using the power of Ethereum and Metamask</p>
             <input type="button" class="button_slide slide_left" value="Connect Metamask Wallet" onclick="connect();">
         </div>
+
         <div class="innerBox">
-        <div>
-          <button class="pay-button">Pay</button>
-          <div id="status"></div>
-        </div>
+          <div>
+            <img class="tip-button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1200px-MetaMask_Fox.svg.png" alt="Metamask tip button" style="width:40%;">
+            <div class="message"></div>
+          </div>
       </div>
     </div>
 
@@ -433,9 +447,7 @@ async function connect() {
 </script>
 
 <!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
+
 <!-- THE AHOY TICKER-->
 <!-- THE AHOY TICKER-->
 
@@ -454,14 +466,14 @@ async function connect() {
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
-            <a target="_blank" href="https://app.ahoy.ooo">
+
+            <a target="_blank" href="https://ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
 
 
 
 
-
         </div>
 
 
@@ -481,33 +493,14 @@ async function connect() {
 <!-- COLUMN 2 -->
 
 
-                <!-- COLUMN 2 -->
+<!-- COLUMN 2 -->
 
-        <div class="ahoyTickerColMIDDLE">
-            
-<br>
-        
-            <span id="spanTITLE"> Active</span> Eth - build 1.0.3a <br>
-            <button onclick="location.href='http://app.ahoy.ooo'">Menu</button>
-            <button onclick="location.href='http://watch.ahoy.ooo'">Watch</button>
-            <button onclick="location.href='http://radio.ahoy.ooo'">Radio</button>
-            <button onclick="location.href='http://eth.ahoy.ooo'">Eth</button>
-<!-- AHOY PUSH BLOCK TITLE  -->
-<p class="superFont" id="ahoyPushTitle"></p>
+<div class="ahoyTickerColMIDDLE">
 
-<br>
 
-<div id="myDiv" style="height:500px height:500px"></div>
-<script>
 
-function changeAhoyTickerDolor() {
-    document.getElementById("ahoy_ticker").style.background-color = "#ccc";
-    document.getElementById("myDIV").style.backgroundColor = "lightblue";
+</div>
 
-}
-</script>
-
-        </div>
 
 
 
@@ -517,35 +510,49 @@ function changeAhoyTickerDolor() {
           <!-- END OF COLUMN 2 -->
            <!-- END OF COLUMN 2 -->
             <!-- END OF COLUMN 2 -->
-             <!-- END OF COLUMN 2 -->
+ <!-- END OF COLUMN 2 -->
 
 
 
-
-
-
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
 
+<!-- COLUMN 3 -->
+
+
+<!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
-<!-- AHOY PUSH TIME  -->
-    <p class="superFont" id="ahoyPushTime"></p>
+
+
+    <!-- AHOY RIGHT MENU -->
+<!-- AHOY RIGHT MENU -->
+
+    <div class="watchMenuRight">
+    <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
+        <button class="activeButton" onclick="location.href='#'">Watch</button>
+    <button class="button" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
+</div>
+<!-- AHOY RIGHT MENU -->
+
+
+<br><!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
+
+
 <!-- TIME DISPLAY -->
-<!-- TIME DISPLAY -->
-    <span id="span"></span>
+<!-- TIME DISPLAY -->   
+<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->   
+ <p class="superFont" id="ahoyPushTitle"></p>
+ <!-- AHOY PUSH TIME  -->
+ <p id="ahoyPushTime"></p>
+<p class="superFontplayBlock"><span id="span"></span></p>
+
  <!-- END OF TIME DISPLAY -->
   <!-- END OF TIME DISPLAY -->
- 
+
+
             
-<!-- LIVE CLOCK -->
+<!-- LIVE CLOCK CODE -->
 <script>
 var span = document.getElementById('span');
 
@@ -560,27 +567,10 @@ function time() {
 
 setInterval(time, 1000);
 </script>
+<!-- COL3 LINE 2 -->
+<br>
+<!-- COL3 LINE 3 -->
 
-
-<script>
-    var span = document.getElementById('span');
-    
-    function time() {
-      var d = new Date();
-      var s = d.getSeconds();
-      var m = d.getMinutes();
-      var h = d.getHours();
-      span.textContent = 
-        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-    }
-    
-    setInterval(time, 1000);
-    </script>
-    
-
-
-
-</div>
 
 <!-- END OF TICKER -->
 <!-- END OF TICKER -->
@@ -639,6 +629,42 @@ setInterval(time, 1000);
     })
   }
 </script>
+
+<!-- TEST 1 -->
+
+<script>
+  var MY_ADDRESS = '0x7891338cC2d668bA268B69e3b8f85Cdf3660495E'
+  var tipButton = document.querySelector('.tip-button')
+
+  tipButton.addEventListener('click', function() 
+      {
+      if (typeof web3 === 'undefined') 
+          {
+          return renderMessage('<div>You need to install <a href=“https://metmask.io“>MetaMask </a> to use this feature.  <a href=“https://metmask.io“>https://metamask.io</a></div>')
+          }
+
+      var user_address = web3.eth.accounts[0]
+
+      web3.eth.sendTransaction(
+          {
+          to: MY_ADDRESS,
+          from: user_address,
+          value: web3.toWei('0.01', 'ether'),
+          }, 
+          function (err, transactionHash) 
+              {
+              if (err) return renderMessage('There was a problem!: ' + err.message)
+              renderMessage('Thanks for the generosity!!')
+          })
+      })
+
+  function renderMessage (message) 
+      {
+      var messageEl = document.querySelector('.message')
+      messageEl.innerHTML = message
+      }
+  </script>
+
 
 </body>
 </html>
