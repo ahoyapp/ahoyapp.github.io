@@ -1,670 +1,251 @@
 <html>
-   <head>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-      <title>Ahoy Test - Connect to ETH - build 1005</title>
-  
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
-
-
+    <head>
+<title>ahoy Main Menu - build 1005a </title>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <style>
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-
-body{
-  background-size: cover;
-        height: 100%;
-        font-family: 'Rubik';font-size: 16px;
-    background-image: url('https://i.giphy.com/media/3ohhwNqFMnb7wZgNnq/giphy.webp');
-}
-
-button {
-    background-color:#000000;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:40px;
-    background: transparent;
-    border: none;
-    cursor:pointer;
-    margin: 1px;
-
-}
-
-button:hover {
-    background-color:#4f4f4f;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:40px;
-    border: none;
-    cursor:pointer;
-    margin: 1px;  
+    @import url('https://fonts.googleapis.com/css?family=Rubik');
+    body
+    
+    {
 
 
-}
-
-.ahoy_ticker {
-  position: fixed;
-  left: 0%;
-  /*top: auto; */
-  right: 0%;
-  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-  bottom: 1.5%;
-  width: 100%;
-  height: 100px;
-    /* OVERFLOW SETTINGS */
-
-  overflow-y: hidden;
-  background-color: #000000;
-  outline-color: #3087ff;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 5px;
-  text-align:center;
-  color:white;
-}
-
-.ahoyRadioContainer {
-  font-family: rubik;
-  font-size: 24px;
-  margin: 25px;
-  width: 350px;
-  height: 200px;
-  outline: dashed 1px black;
-}
-
-   /*-- Outer Box CSS --*/
-   .outerBox {
-    height: 60vh;
-    background: #00000000;
-    padding: 0 20px;
-    margin: 50px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-    display:block;
-}
-
-/*-- Inner Box CSS --*/
-.innerBox {
-    background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #ff0d5200;
-    border-radius: 10px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-
-}
-
-.ahoy_ticker {
-  position: fixed;
-  left: 0%;
-  /*top: auto; */
-  right: 0%;
-  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-  bottom: 1.5%;
-  width: 100%;
-  height: 100px;
-    /* OVERFLOW SETTINGS */
-
-  overflow-y: hidden;
-  background-color: #000000;
-  outline-color: #FFFFBC;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 1px;
-  text-align:center;
-  color:white;
-}
-
- /* Create three equal columns that floats next to each other */
- .ahoyTickerCol {
-          float: left;
-          width: 20%;
-         min-height:100%;
-          padding: 10px;
-          background-color: #0B030C;
-
-        }
-
-        .ahoyTickerColMIDDLE {
-          float: left;
-          width: 50%;
-          min-height: 100%;
-          padding: 10px;
-          font-family: "Rubik";
-          text-align:center;
-          background-color: #0B030C;
-          color:white;
+        background-color: #80ffd339;
+        background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:50px;
+    margin:0;
 
 
-        }
-
-        .ahoyTickerColTIME {
-            background-color: #0B030C;
-          float: left;
-          min-height: 100%;
-          width: 25%;
-          padding-top: 10px;
-          font-family: "rubik";
-          left: 50%;
-            top: 20%;
-            vertical-align: top;
-            display: inline-block;
+    }
 
 
 
-        }
 
-        .ahoyTickerColWrap
-        {
-            width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-        .ayeTitle {
-            font-weight:500;
-            font-size:16px;
-        }
-
-        
-
-.imgAhoyLogo {
-  border: 11px solid rgba(221, 221, 221, 0.016);
-  border-radius: 4px;
-  padding: 5px;
-  width: 200px;
-  height: auto;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-#spanTITLE
-{ 
-    font-family:Rubik, serif;
-            font-weight: 900;
-            font-size:16px;
-            text-align:center;
-            padding-top:10px;
-            padding-bottom:10px;
-            color:#FF5E7C;
-            text-transform: uppercase;
-}
-
-.superFontBig {
-    font-weight: 300;
-    font-size: 32px;
+    
+.superFont {
+    font-weight: 900;
+    font-size: 17px;
     font-family: rubik;
     color:rgba(255, 255, 255, 0.707);
     text-transform: uppercase;
 
 }
 
-.superFontLink {
+.superFontLittle {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 11px;
     font-family: rubik;
-    color:rgba(255, 255, 255, 0.219);
+    color:rgba(255, 255, 255, 0.707);
     text-transform: uppercase;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 3px solid rgb(255, 255, 255); 
+  margin: 10px;
+}
+
+a {
     text-decoration: none;
-    padding: 25px;
-    border: 1px;
-    border-color:white;
-
 }
 
-.superFontLink:hover{
-  color:white;
-}
-
-
-.superFont {
-    font-weight: 300;
-    font-size: 12px;
-    font-family: rubik;
-    color:rgba(250, 250, 250, 0.219);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 25px;
-    border: 1px;
-    border-color:white;
-
-}
-
-@media only screen and (max-width: 500px) {
-
-
-  body {
-    background-color: lightblue;
-    background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
-  }
-
-  .ahoy_ticker {
-  position: fixed;
-  left: 0%;
-  /*top: auto; */
-  right: 0%;
-  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-  bottom: 18.5%;
-  width: 100%;
-  height: 120px;
-    /* OVERFLOW SETTINGS */
-
-  overflow-y: hidden;
-  background-color: #ff9696;
-  outline-color: #FFFFBC;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 1px;
-  text-align:center;
-  color:white;
-  size: 12px;
-}
-
-   /*-- Outer Box CSS --*/
-   .outerBox {
-    height: 60vh;
-    background: #ffffff;
-    padding: 0 20px;
-    margin: 50px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #ffafaf00;
-    border-radius: 5px;
-}
-
-/*-- Inner Box CSS --*/
-.innerBox {
-    background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #e72eff;
-    border-radius: 10px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-
-}
-
-.superFont {
-    font-weight: 300;
-    font-size: 12px;
-    font-family: rubik;
-    color:rgba(255, 255, 255, 0.219);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 25px;
-    border: 1px;
-    border-color:white;
-
-}
 
 .imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
-  border-radius: 2px;
-  padding: 5px;
-  width: 175px;
+  border-radius: 4px;
+  width: 300px;
   height: auto;
 }
 
 img:hover {
+  box-shadow: 0 0 2px 1px rgba(21, 196, 255, 0.5);
+}
+
+    /*-- Outer Box CSS --*/
+    .outerBox {
+    height: 65vh;
+    background: #002d5514;
+    padding: 0 20px;
+    margin: 100px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #a5a5a5;
+    border-radius: 5px;
+}
+
+.outerBox:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
- /* Create three equal columns that floats next to each other */
- .ahoyTickerCol {
-          float: left;
-          width: 20%;
-         min-height:100%;
-          padding: 10px;
-          background-color: #0B030C;
-
-        }
-
-        .ahoyTickerColMIDDLE {
-          float: left;
-          width: 50%;
-          min-height: 100%;
-          padding: 10px;
-          font-family: "Rubik";
-          text-align:center;
-          background-color: #0B030C;
-          color:white;
-
-
-        }
-
-        .ahoyTickerColTIME {
-            background-color: #000000;
-          float: left;
-          min-height: 100%;
-          width: 15%;
-          padding-top: 10px;
-          font-family: "rubik";
-          left: 50%;
-            top: 20%;
-            vertical-align: top;
-            display: inline-block;
-
-
-
-        }
-
- .ahoyTickerColWrap
-        {
-            width: 100%;
-  align-items: center;
-  justify-content: center;
+.innerBox:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.button_slide {
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 0px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
-
-.slide_diagonal:hover {
-  box-shadow: inset 400px 50px 0 0 #D80286;
-}
-
-.slide_left:hover {
-  box-shadow: inset 0 0 0 50px #D80286;
+.center:hover{
+  box-shadow: 0 0 2px 5px rgb(15, 245, 230);
 }
 
 
 
+
+
+
+
+.innerBoxMenuA {
+    background: #002d5514;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+
 }
 
-.tip-button {
-    width:200px;
-    height:auto;
+.innerBoxMenuB {
+    background: #002d5514;
+    box-shadow: 0px 0px 6px 0px #1b2eff68;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
 
 }
 
+.innerBoxMenuB {
+    width:100%;
+
+}
+
+.outerBoxMenu {
+    height: 50vh;
+    background: #002d5514;
+    padding: 0 20px;
+    margin: 100px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #361bff70;
+    border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+
+  float: left;
+  width: 100%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* MEDIA MEDIA MEDIA */
+
+@media only screen and (max-width: 875px) 
+{
+  body {
+
+        background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-position: 35% -20%;
+    padding:0px;
+
+  }
+
+  .innerBoxMenuA {
+    background: #002d5514;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.innerBoxMenuB {
+    width:100%;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
+
+}
+
+.outerBoxMenu {
+   display:block;
+   height:70vh;
+   box-shadow: 0px 0px 6px 0px #ff009015;
+}
+
+.imgAhoyLogo {
+  border: 11px solid rgba(221, 221, 221, 0.016);
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.row {
+    display:block;
+}
+
+}
 
 </style>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
-
- <!-- ETH BODY -->
- <!-- ETH BODY -->
-  <!-- ETH BODY -->
-   <!-- ETH BODY --> 
- <!-- ETH BODY -->
+</head>
 <body>
 
-    <div class="outerBox">
-        <div class="innerBox">
-            <a target="_blank" href="https://www.ahoy.ooo">
-                <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
-                            </a>
-            <p class="superFont">Support your favorite artist on Ahoy, using the power of Ethereum and Metamask</p>
-            <input type="button" class="button_slide slide_left" value="Connect Metamask Wallet" onclick="connect();">
-        </div>
-
-        <div class="innerBox">
-          <div>
-            <img class="tip-button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1200px-MetaMask_Fox.svg.png" alt="Metamask tip button" style="width:40%;">
-            <div class="message"></div>
-          </div>
-      </div>
-    </div>
-
-    
-
-
-
-<script>
-/* To connect using MetaMask */
-async function connect() {
-  if (window.ethereum) {
-     await window.ethereum.request({ method: "eth_requestAccounts" });
-     window.web3 = new Web3(window.ethereum);
-     const account = web3.eth.accounts;
-     //Get the current MetaMask selected/active wallet
-     const walletAddress = account.givenProvider.selectedAddress;
-     console.log(`Wallet: ${walletAddress}`);
-  
-  } else {
-   console.log("No wallet");
-  }
-}
-</script>
-
-<!-- THE AHOY TICKER-->
-
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-
-
-<div class="ahoy_ticker">
-
-
-
-    <div class="ahoyTickerColWrap">
-        <!-- COLUMN 1 -->
-                <!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-        <div class="ahoyTickerCol">
-
-            <a target="_blank" href="https://ahoy.ooo">
-<img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
-            </a>
-
-
-
-
-        </div>
-
-
-
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-
-
-
-
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-
-
-<!-- COLUMN 2 -->
-
-<div class="ahoyTickerColMIDDLE">
-
-
-
-</div>
-
-
-
-
-
-        <!-- END OF COLUMN 2 -->
-         <!-- END OF COLUMN 2 --> <!-- END OF COLUMN 2 -->
-          <!-- END OF COLUMN 2 -->
-           <!-- END OF COLUMN 2 -->
-            <!-- END OF COLUMN 2 -->
- <!-- END OF COLUMN 2 -->
-
-
-
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-
-<!-- COLUMN 3 -->
-
-
-<!-- COL3 LINE 1 -->
-<div class="ahoyTickerColTIME">
-
-
-    <!-- AHOY RIGHT MENU -->
-<!-- AHOY RIGHT MENU -->
-
-    <div class="watchMenuRight">
-    <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
-        <button class="activeButton" onclick="location.href='#'">Watch</button>
-    <button class="button" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-    <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
-</div>
-<!-- AHOY RIGHT MENU -->
-
-
-<br><!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
-
-
-<!-- TIME DISPLAY -->
-<!-- TIME DISPLAY -->   
-<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->   
- <p class="superFont" id="ahoyPushTitle"></p>
- <!-- AHOY PUSH TIME  -->
- <p id="ahoyPushTime"></p>
-<p class="superFontplayBlock"><span id="span"></span></p>
-
- <!-- END OF TIME DISPLAY -->
-  <!-- END OF TIME DISPLAY -->
-
-
+<div class="outerBoxMenu">
+<div class="innerBoxMenuA">
+        <div class="row">
+        <a target="_blank" href="https://www.ahoy.ooo">
+            <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
+                        </a>
+                        </div>
+                    
+<p class="superFontLittle">build 1005a</p>
             
-<!-- LIVE CLOCK CODE -->
-<script>
-var span = document.getElementById('span');
+                </div>
+                    
+<div class="innerBoxMenuB">
 
-function time() {
-  var d = new Date();
-  var s = d.getSeconds();
-  var m = d.getMinutes();
-  var h = d.getHours();
-  span.textContent = 
-    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-}
+<div class="row">
+  <div class="column" style="background-color:rgba(10, 5, 5, 0.353);">
 
-setInterval(time, 1000);
-</script>
-<!-- COL3 LINE 2 -->
-<br>
-<!-- COL3 LINE 3 -->
+  <a href="https://watch.ahoy.ooo">
+  <div class="center">
+<p class="superFont">watch</p>
+  </div></a>
+  <a href="https://radio.ahoy.ooo">
+  <div class="center">
+    <p class="superFont">radio</p>
+  </div></a>
 
-
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-<!-- END OF TICKER -->
-
-<script type="text/javascript">
-  window.addEventListener('load', async () => {
-    if (window.ethereum) {
-      window.web3 = new Web3(ethereum);
-      try {
-        await ethereum.enable();
-        initPayButton()
-      } catch (err) {
-        $('#status').html('User denied account access', err)
-      }
-    } else if (window.web3) {
-      window.web3 = new Web3(web3.currentProvider)
-      initPayButton()
-    } else {
-      $('#status').html('No Metamask (or other Web3 Provider) installed')
-    }
-  })
-
-  const initPayButton = () => {
-    $('.pay-button').click(() => {
-      // paymentAddress is where funds will be send to
-      const paymentAddress = '0x192c96bfee59158441f26101b2db1af3b07feb40'
-      const amountEth = 1
-
-      web3.eth.sendTransaction({
-        to: paymentAddress,
-        value: web3.toWei(amountEth, 'ether')
-      }, (err, transactionId) => {
-        if  (err) {
-          console.log('Payment failed', err)
-          $('#status').html('Payment failed')
-        } else {
-          console.log('Payment successful', transactionId)
-          $('#status').html('Payment successful')
-        }
-      })
-    })
-  }
-</script>
-
-<!-- TEST 1 -->
-
-<script>
-  var MY_ADDRESS = '0x7891338cC2d668bA268B69e3b8f85Cdf3660495E'
-  var tipButton = document.querySelector('.tip-button')
-
-  tipButton.addEventListener('click', function() 
-      {
-      if (typeof web3 === 'undefined') 
-          {
-          return renderMessage('<div>You need to install <a href=“https://metmask.io“>MetaMask </a> to use this feature.  <a href=“https://metmask.io“>https://metamask.io</a></div>')
-          }
-
-      var user_address = web3.eth.accounts[0]
-
-      web3.eth.sendTransaction(
-          {
-          to: MY_ADDRESS,
-          from: user_address,
-          value: web3.toWei('0.01', 'ether'),
-          }, 
-          function (err, transactionHash) 
-              {
-              if (err) return renderMessage('There was a problem!: ' + err.message)
-              renderMessage('Thanks for the generosity!!')
-          })
-      })
-
-  function renderMessage (message) 
-      {
-      var messageEl = document.querySelector('.message')
-      messageEl.innerHTML = message
-      }
-  </script>
-
+</div>
+</div></div>
 
 </body>
 </html>
