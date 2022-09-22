@@ -24,7 +24,7 @@
 
 
         <title>
-            Schedule build 1001D
+            Schedule build 1003D
         </title>
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -39,9 +39,9 @@
 
 body 
 {           
-    padding:10px;
+    padding:5px;
     font: .75em sans-serif;
-    background-color: #353535;
+    
     /*height: 100vh; */
 
   /* display: flex; */
@@ -50,23 +50,36 @@ body
 
  background-image: url('https://i.pinimg.com/originals/51/7e/23/517e23e93a5f0b752d31fd0d21a84214.gif');
     background-size: cover;
+    font-family:"Rubik";
 
 
+}
+
+html {
+    height:auto;
+    width:100%;
 }
 
 /* GRID SETUP */
 .calendar {
-  padding:25px;
+  padding:20px;
   display: grid;
   grid-gap: 1.5px;
 position: fixed;
-  width: 75%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
 /*   padding: 5px; */
 
 /* AG CUSTOM - CALENDAR COLORS */
 
-background-color: #ff41571c;
+background-color: #00000061;
+
+top:10%;
+left:2.5%;
+margin:auto;
+overflow:hidden;
+max-height:70%;
+max-width:90%;
 
 
 
@@ -74,17 +87,26 @@ background-color: #ff41571c;
 
 
 }
+
+/*AG CUSTOM TWEAKS */
+
+.topSubHeader {
+    text-align:left;
+    
+}
+
+/* End of AG CUSTOM TWEAKS */
 
 .weekly-byhour {
   /* NAMED LINE NUMBERS (between tracks): 
         COLS: hour markers + 7 days
         ROWS: day markers + 24 hours */
   grid-template-columns: 
-    [time] auto [mon] 1fr [tue] 1fr [wed] 1fr [thu] 1fr [fri] 1fr [sat] 1fr [end-col];
+    [time] auto [mon] 1fr [tue] 1fr [wed] 1fr [thu] 1fr [fri] 1fr  [end-col];
   grid-template-rows:
     [day]  auto
-    [h05]  1fr
-    [h06]  1fr
+    /*[h05]  1fr
+     [h06]  1fr */
     [h07]  1fr 
     [h08]  1fr
     [h09]  1fr
@@ -112,8 +134,8 @@ background-color: #ff41571c;
 
 /* GENERAL ITEM SETUP */
 .calendar li {
-  background-color: rgb(0, 0, 0);
-  padding: 0.25em;
+  background-color: rgba(0, 0, 0, 0.156);
+  padding: 1em;
   display: inline-block;
   color:white;
 }
@@ -121,51 +143,161 @@ background-color: #ff41571c;
 /* ITEM TYPES */
 li.day, li.time, li.corner { background-color: hsl(0, 0%, 0%); color:white; }
 li.day { text-align: center; }
-li.time { text-align: right; vertical-align: bottom; }
-li.event { background-color: #82caaf; position: absolute; height: 100%; width: 100%; }
+li.time { text-align: right; vertical-align: center; }
+li.event { background-color: #ffffff; position: absolute; height: 100%; width: 100%; }
 
 /* CATEGORIES */
-.event.work { background-color: #6a71fe43; 
+.event.blockA { background-color: #6a71fe43; 
     border-style: solid;
-  border-width: .5px;
+  border-width: 1.5px;
 width:90%
 height: 95%;
-}
-.event.personal { background-color: #4c00ff; 
-    border-style: solid;
-  border-width: .5px;
-width: 90%;
-height: 95%;
+padding:0px;
+transform: scale(0.9);
+position:relative;
+text-align:center; 
+align:center;
+transition-property: transform: scale();
+  transition-duration: .35s;
+  transition-delay: .02s;
 
 }
-  .event.blockC { background-color: #ff4171ea; 
+.event.blockB { background-color: #4c00ff4b; 
     border-style: solid;
-      border-width: .5px;
-  color:white;
-  width: 90%;
-  height: 95%;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(0.9);
+position:relative;
+text-align:center; 
+align:center;
+transition-property: transform: scale();
+  transition-duration: .35s;
+  transition-delay: .02s;
+
+}
+
+.event.blockC { background-color: #ff41718d; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(0.9);
+position:relative;
+text-align:center; 
+align:center;
+transition-property: transform: scale();
+
+  transition-duration: .35s;
+  transition-delay: .02s;
   
 
 }
 
+/* CATEGORIES HOVER HOVER HOVER */
+.event.blockA:hover { background-color: #6a71fe43; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1);
+position:relative;
+text-align:center; 
+align:center;
+
+}
+.event.blockB:hover { background-color: #4c00ff4b; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1);
+position:relative;
+text-align:center; 
+align:center;
+
+}
+  .event.blockC:hover { background-color: #ff41718d; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1);
+position:relative;
+text-align:center; 
+align:center;
+  
+
+}
+
+/* CATEGORIES ACTIVE ACTIVE PRESSED PRESSED
+.event.blockA:active { background-color: #000000; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1.25);
+position:relative;
+
+text-align:center; 
+align:center;
+z-index: 200;
+transition-property: transform: scale();
+  transition-duration: .02s;
+
+
+}
+.event.blockB:hover { background-color: #4c00ff4b; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1);
+position:relative;
+text-align:center; 
+align:center;
+
+}
+  .event.blockC:hover { background-color: #ff41718d; 
+    border-style: solid;
+  border-width: 1.5px;
+width:90%
+height: 95%;
+padding:0px;
+transform: scale(1);
+position:relative;
+text-align:center; 
+align:center;
+  
+
+}
+ */
+
 
 /* DAY HEADINGS   row / col */
-.sun { grid-area: day / sun; }
+/* .sun { grid-area: day / sun; } */
 .mon { grid-area: day / mon; }
 .tue { grid-area: day / tue; }
 .wed { grid-area: day / wed; }
 .thu { grid-area: day / thu; }
 .fri { grid-area: day / fri; }
-.sat { grid-area: day / sat; }
+/* .sat { grid-area: day / sat; } */
 
-/* TIME HEADINGS  row / col */
+/* TIME HEADINGS  row / col 
 .h00 { grid-area: h00 / time; }
 .h01 { grid-area: h01 / time; }
 .h02 { grid-area: h02 / time; }
 .h03 { grid-area: h03 / time; }
 .h04 { grid-area: h04 / time; }
 .h05 { grid-area: h05 / time; }
-.h06 { grid-area: h06 / time; }
+.h06 { grid-area: h06 / time; } */
 .h07 { grid-area: h07 / time; }
 .h08 { grid-area: h08 / time; }
 .h09 { grid-area: h09 / time; }
@@ -174,7 +306,7 @@ height: 95%;
 .h12 { grid-area: h12 / time; }
 .h13 { grid-area: h13 / time; }
 .h14 { grid-area: h14 / time; }
-.h15 { grid-area: h15 / time; }
+.h15 { grid-area: h15 / time; } 
 .h16 { grid-area: h16 / time; }
 .h17 { grid-area: h17 / time; }
 .h18 { grid-area: h18 / time; }
@@ -188,28 +320,31 @@ height: 95%;
     background-color: black;
 
 }
-
+/*
 .superWrap {
-
+display:none;
 }
+*/
 
    /*-- Outer Box CSS --*/
+   
+   /*
    .superWrap {
-    height: 70vh;
+    height: 65vh;
     background: #00000000;
-    padding: 0 20px;
-    margin: 50px 50px 20px;
+   /* padding: 0 20px; */
+    /* margin: 50px 50px 20px; */
     /* display: flex; */
-    justify-content: center;
+   /* justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 6px 0px #a5a5a5;
-    border-radius: 5px;
     overflow: hidden;
 }
 
-/*-- Inner Box CSS --*/
+
+/*-- Inner Box CSS
 .innerSuperWrap {
-    background: #05c4dd03;
+    background: #58ecffba;
     box-shadow: 0px 0px 6px 0px #0dffdf;
     border-radius: 10px;
     padding: 30px;
@@ -218,12 +353,17 @@ height: 95%;
     position:absolute;
 
 }
+ --*/
 
 
 .lilCalText {
     font-size:12px;
     text-align:left;
+    line-height:20px;
+    padding:10px;
 }
+
+/* AG CUSTOM SCHEDULER HEADER + RESPONSIVE SUGAR ON HEADER */
 
 .superSchedule {
     font-size:120px;
@@ -232,17 +372,27 @@ height: 95%;
     text-align: center;
     line-height:90px;
     text-transform: uppercase;
-padding:25px;
+padding:15px;
 margin:0px;
 }
+
+@media only screen and (max-width: 1200px) 
+{
+
+    .superSchedule {
+
+        transform: scale(0.7);
+}
+
+}
+
+
+/* END of AG CUSTOM SCHEDULER HEADER + RESPONSIVE SUGAR ON HEADER */
 
 /* IMPORT FROM WATCH */
 
 
-span {
-    margin:0px;
-    padding:0px;
-}
+
 p {
     margin:0px;
     padding:0px;
@@ -289,8 +439,8 @@ button:hover {
 }
 
 .activeButton {
-    background-color:#23c8ff4b;
-    color:white;
+    background-color:#01bfff;
+    color:rgb(0, 0, 0);
     font-size:12px;
     font-family:rubik;
     text-decoration: none;
@@ -468,23 +618,7 @@ img:hover {
     
 
 
-.wrapper {
 
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 0px;
-    border: white;
-}
-.wrapper iframe {
-
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: black;
-    border-style: solid;
-    border-width: 5px;
-}
 
 
 
@@ -651,55 +785,6 @@ img:hover {
   transition: transform: translateY(-1px);
 }
 
-
-
-.button-30:hover {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-      transform: translateY(-2px);
-      transition: width 2s;
-      
-}
-
-.button-30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-/* CSS */
-.button-30 {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-}
-
-.button-30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
 .newTonight {
     background-color: rgba(255, 255, 255, 0);
     border-style: solid;
@@ -725,11 +810,11 @@ img:hover {
 /* End of Import */
 
 
-.scheduleMenu {display:none;}
+.scheduleMenu {display:in-line;}
 
 
 .mainWrapSchedule {
-    text-align:center;
+    text-align:left;
 }
 
 
@@ -740,47 +825,65 @@ img:hover {
 
 
 
-<div class="superWrap">
 
+<!--
 <div>
-    <p class="superSchedule">Week 38 Schedule</p>
-</div>
+    <p class="superSchedule">Week <div id="weekNumber">3b</div>Schedule</p>
+</div> -->
+
+<!-- <div class="superWrap"></div> -->
 
 
 
 
-
-
-        <div class="mainWrapSchedule">
+       <div class="mainWrapSchedule"> 
        <!-- Non-responsive (yet); Just a small sample of what's possible with CSS Grid. -->
-
+<div id="AGcalendarWrap">
 <ul class="calendar weekly-byhour">
     <!--  EVENT NODES  -->
     <!--  DATA:      CATEGORY                         DAY              START  /  END     EVENT DETAILS  -->
-    <li class="event work"      style="grid-column:   mon;   grid-row:  h08   /  h11;  ">Finish this calendar</li>
-    <li class="event work"      style="grid-column:   wed;   grid-row:  h10   /  h19;  ">Master the grid!</li>
-    <li class="event personal"  style="grid-column:   fri;   grid-row:  h16   /  h23;  ">After work drinks</li>
-    <li class="event personal"  style="grid-column:   tue;   grid-row:  h18   /  h20;  ">Soccer game</li>
 
-    <li class="event personal"  style="grid-column:   mon;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
-    <li class="event personal"  style="grid-column:   tue;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
+    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
     <li class="event blockC"  style="grid-column:   wed;   grid-row:  h07   /  h10;  ">playBlock 1c</li>
+    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
+    <li class="event blockB"  style="grid-column:   fri;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
 
-    <li class="event personal"  style="grid-column:   mon;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
-    <li class="event personal"  style="grid-column:   tue;   grid-row:  h10   /  h12;  ">playBlock 2b</li>
-    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h10   /  h12;  ">playBlock 2c</li>
+    <li class="event blockB"  style="grid-column:   mon;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
+    <li class="event blockC"  style="grid-column:   tue;   grid-row:  h10   /  h12;  ">playBlock 2b</li>
+    <li class="event blockB"  style="grid-column:   wed;   grid-row:  h10   /  h12;  ">playBlock 2c</li>
+    <li class="event blockC"  style="grid-column:   thu;   grid-row:  h10   /  h12;  ">playBlock 2b<br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
+    <li class="event blockA"  style="grid-column:   fri;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
 
-    <li class="event personal"  style="grid-column:   mon;   grid-row:  h13   /  h17;  ">playBlock 3a</li>
-    <li class="event personal"  style="grid-column:   tue;   grid-row:  h13   /  h17;  ">playBlock 3b</li>
-    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h13   /  h17;  ">playBlock c</li>
-    <li class="event personal"  style="grid-column:   thu;   grid-row:  h13   /  h17;  ">playBlock a</li>
-    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h13   /  h17;  ">playBlock c</li>
+    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h12   /  h14;  ">playBlock 3a</li>
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h12   /  h14;  ">playBlock 3b</li>
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h12   /  h14;  ">playBlock 3c<br> <p class="lilCalText">Music Videos  </p></li>
+    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h12   /  h14;  ">playBlock 3a</li>
+    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h12   /  h14;  ">playBlock 3c</li>
 
 
-    <li class="event work"      style="grid-column:   thu;   grid-row:  h18   /  h20;  ">playBlock 5c</li>
-    <li class="event work"      style="grid-column:   fri;   grid-row:  h19   /  h22;  ">playBlock 5c <br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
-    <li class="event work"      style="grid-column:   tue;   grid-row:  h19   /  h22;  ">playBlock 5b</li>
-    <li class="event work"      style="grid-column:   wed;   grid-row:  h19   /  h22;  ">playBlock 5a</li>
+    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h14   /  h18;  ">playBlock 4a</li>
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h14   /  h18;  ">playBlock 4b<br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h14   /  h18;  ">playBlock 4c</li>
+    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h14   /  h18;  ">playBlock 4a</li>
+    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h14   /  h18;  ">playBlock 4c</li>
+
+
+
+
+    <li class="event blockB"    style="grid-column:   mon;   grid-row:  h18   /  h22;  ">playBlock 5c</li>
+    <li class="event blockA"      style="grid-column: tue;   grid-row:  h18   /  h22;  ">playBlock 5c <br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
+    <li class="event blockC"    style="grid-column:   wed;   grid-row:  h18   /  h22;  ">playBlock 5c <br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
+    <li class="event blockC"      style="grid-column: thu;   grid-row:  h18   /  h22;  ">playBlock 5b</li>
+    <li class="event blockA"      style="grid-column: fri;   grid-row:  h18   /  h22;  ">playBlock 5a <br><p class="lilCalText">Little LoFi Random</p></li> 
+
+    <li class="event blockC"      style="grid-column:   mon;   grid-row:  h22   /  h23;  ">playBlock 6c</li>
+    <li class="event blockB"      style="grid-column:   tue;   grid-row:  h22   /  h23;  ">playBlock 6b</li>
+    <li class="event blockC"      style="grid-column:   wed;   grid-row:  h22   /  h23;  ">playBlock 6c</li>
+    <li class="event blockA"      style="grid-column:   thu;   grid-row:  h22   /  h23;  ">playBlock 6a</li>
+    <li class="event blockB"      style="grid-column:   fri;   grid-row:  h22   /  h23;  ">playBlock 6b</li>
+
+
     
     <!--  DAYS OF THE WEEK  -->
     <!-- <li class="day sun">Sun</li> -->
@@ -789,7 +892,6 @@ img:hover {
     <li class="day wed">Wed</li>
     <li class="day thu">Thu</li>
     <li class="day fri">Fri</li>
-    <li class="day sat">Sat</li>
     
     <!--  TIMES OF THE DAY  -->
   
@@ -812,11 +914,11 @@ img:hover {
     <li class="time h23">11p</li>
   
     <!--  TOP LEFT CORNER FILLER  -->
-    <li class="corner"></li>
+     <li class="corner"></li>
     
     <!--  EMPTY HOURLY FILLERS:
       Helps us show the grid template lines, and create calendar funtionality later. One for every hour
-      cell (7 * 24), because our events are "position:absolute" and will sit over top of empty cells -->
+      cell (7 * 24), because our events are "position:absolute" and will sit over top of empty cells 
     <li></li>
     <li></li>
     <li></li>
@@ -984,13 +1086,13 @@ img:hover {
     <li></li>
     <li></li>
     <li></li>
-    <li></li>
+    <li></li> -->
   </ul>
 </div>
 
-<div>
-    The Watch Schedule for Weekly Schedule 
-</div>
+<!-- div class="topSubHeader">
+    What's playing on the watch this week (build 1002G)
+</div> -->
 
 <div class="scheduleMenu">
 
@@ -1004,6 +1106,15 @@ img:hover {
 </div>
 <!-- End of Superwrap-->
 </div>
+
+
+</div>
+
+
+
+
+
+
 
 <!-- THE AHOY TICKER-->
 
