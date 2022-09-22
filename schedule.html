@@ -50,15 +50,15 @@ body
 
  background-image: url('https://i.pinimg.com/originals/51/7e/23/517e23e93a5f0b752d31fd0d21a84214.gif');
     background-size: cover;
+    
+  background-blend-mode: screen;
     font-family:"Rubik";
-
+    box-shadow:inset 0 0 0 2000px rgba(0, 27, 52, 0.477);
+   
 
 }
 
-html {
-    height:auto;
-    width:100%;
-}
+
 
 /* GRID SETUP */
 .calendar {
@@ -356,11 +356,48 @@ display:none;
  --*/
 
 
+ .lilCalHeader {
+   
+    font-size: 12px;
+    padding:5px;
+    margin:0px;
+    line-height:12px;
+    font-weight:900;
+    text-transform: uppercase;
+    color:#d2d2d2dd
+
+    /* test wild */
+    font-weight: 600;
+           
+         
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 200%;
+            animation: move 35s ease infinite;
+            background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+        }
+
+        
+        @keyframes move {
+            0%,100%{
+                background-position: 200% 0%;
+            }
+
+            50%{
+                background-position: 0% 200%;
+            }
+        }
+
 .lilCalText {
     font-size:12px;
-    text-align:left;
-    line-height:20px;
+    text-align:center;
+    line-height:14px;
     padding:10px;
+    
 }
 
 /* AG CUSTOM SCHEDULER HEADER + RESPONSIVE SUGAR ON HEADER */
@@ -511,9 +548,6 @@ overflow:none;
 
 
         }
-
-       
-        
 
         
 
@@ -843,45 +877,176 @@ img:hover {
     <!--  EVENT NODES  -->
     <!--  DATA:      CATEGORY                         DAY              START  /  END     EVENT DETAILS  -->
 
-    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
-    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
-    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h07   /  h10;  ">playBlock 1c</li>
-    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
-    <li class="event blockB"  style="grid-column:   fri;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
+    <!-- Play Block 1 SCHEDULE-->
 
-    <li class="event blockB"  style="grid-column:   mon;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
-    <li class="event blockC"  style="grid-column:   tue;   grid-row:  h10   /  h12;  ">playBlock 2b</li>
-    <li class="event blockB"  style="grid-column:   wed;   grid-row:  h10   /  h12;  ">playBlock 2c</li>
-    <li class="event blockC"  style="grid-column:   thu;   grid-row:  h10   /  h12;  ">playBlock 2b<br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
-    <li class="event blockA"  style="grid-column:   fri;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
+    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h07   /  h10;  ">
+        <p class="lilCalHeader">playBlock 1a</p>
+        <p class="lilCalText">Publicly Avaliable Documentaries
+    </li>
 
-    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h12   /  h14;  ">playBlock 3a</li>
-    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h12   /  h14;  ">playBlock 3b</li>
-    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h12   /  h14;  ">playBlock 3c<br> <p class="lilCalText">Music Videos  </p></li>
-    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h12   /  h14;  ">playBlock 3a</li>
-    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h12   /  h14;  ">playBlock 3c</li>
-
-
-    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h14   /  h18;  ">playBlock 4a</li>
-    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h14   /  h18;  ">playBlock 4b<br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
-    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h14   /  h18;  ">playBlock 4c</li>
-    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h14   /  h18;  ">playBlock 4a</li>
-    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h14   /  h18;  ">playBlock 4c</li>
+    <li class="event blockA"  style="grid-column:   tue;   grid-row:  h07   /  h10;  ">
+        <p class="lilCalHeader">playBlock 1a</p>
+        <p class="lilCalText">Publicly Avaliable Documentaries
+    </li>
+    
+    <li class="event blockA"  style="grid-column:   wed;   grid-row:  h07   /  h10;  ">
+        <p class="lilCalHeader">playBlock 1a</p>
+        <p class="lilCalText">Publicly Avaliable Documentaries
+    </li>
+    
+    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h07   /  h10;  ">
+        <p class="lilCalHeader">playBlock 1a</p>
+        <p class="lilCalText">Publicly Avaliable Documentaries
+    </li>
 
 
+    <li class="event blockA"  style="grid-column:   fri;   grid-row:  h07   /  h10;  ">
+        <p class="lilCalHeader">playBlock 1a</p>
+        <p class="lilCalText">Publicly Avaliable Documentaries
+    </li>
+
+    <!-- PLAY BLOCK 2 SCHEDULE -->
+
+    <li class="event blocka"  style="grid-column:   mon;   grid-row:  h10   /  h12;  ">
+        <p class="lilCalHeader">playBlock 2a</p>
+        <p class="lilCalText">Ahoy Classic Mix #1</p>
+    </li>
+
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h10   /  h12;  ">
+        <p class="lilCalHeader">playBlock 2b</p>
+        <p class="lilCalText">Ahoy Classic Mix #2
+    </li>
+
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h10   /  h12;  ">
+        <p class="lilCalHeader">playBlock 2c</p>
+        <p class="lilCalText">Ahoy Classic Mix #3
+    </li>
 
 
-    <li class="event blockB"    style="grid-column:   mon;   grid-row:  h18   /  h22;  ">playBlock 5c</li>
-    <li class="event blockA"      style="grid-column: tue;   grid-row:  h18   /  h22;  ">playBlock 5c <br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
-    <li class="event blockC"    style="grid-column:   wed;   grid-row:  h18   /  h22;  ">playBlock 5c <br> <p class="lilCalText">Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </p></li>
-    <li class="event blockC"      style="grid-column: thu;   grid-row:  h18   /  h22;  ">playBlock 5b</li>
-    <li class="event blockA"      style="grid-column: fri;   grid-row:  h18   /  h22;  ">playBlock 5a <br><p class="lilCalText">Little LoFi Random</p></li> 
+    <li class="event blockB"  style="grid-column:   thu;   grid-row:  h10   /  h12;  ">
+        <p class="lilCalHeader">playBlock 2b</p>
+        <p class="lilCalText">Ahoy Classic Mix #2
+    </li>
 
-    <li class="event blockC"      style="grid-column:   mon;   grid-row:  h22   /  h23;  ">playBlock 6c</li>
-    <li class="event blockB"      style="grid-column:   tue;   grid-row:  h22   /  h23;  ">playBlock 6b</li>
-    <li class="event blockC"      style="grid-column:   wed;   grid-row:  h22   /  h23;  ">playBlock 6c</li>
-    <li class="event blockA"      style="grid-column:   thu;   grid-row:  h22   /  h23;  ">playBlock 6a</li>
-    <li class="event blockB"      style="grid-column:   fri;   grid-row:  h22   /  h23;  ">playBlock 6b</li>
+    <li class="event blocka"  style="grid-column:   fri;   grid-row:  h10   /  h12;  ">
+            <p class="lilCalHeader">playBlock 2a</p>
+            <p class="lilCalText">Ahoy Classic Mix #1</p>
+        
+        </li>
+
+
+    <!-- PLAYBLOCK 3 SCHEDULE -->
+
+
+    <li class="event blockB"  style="grid-column:   mon;   grid-row:  h12   /  h14;  ">
+        <p class="lilCalHeader">playBlock 3b</p>
+        <p class="lilCalText">Ahoy Company Updates and Miscellanous Weather Reports</p> 
+    </li>
+
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h12   /  h14;  ">
+        <p class="lilCalHeader">playBlock 3b</p>
+        <p class="lilCalText">Ahoy Company Updates and Miscellanous Weather Reports</p> 
+    </li>
+
+    <li class="event blockB"  style="grid-column:   wed;   grid-row:  h12   /  h14;  ">
+        <p class="lilCalHeader">playBlock 3b</p>
+        <p class="lilCalText">Ahoy Company Updates and Miscellanous Weather Reports</p> 
+    </li>
+
+    <li class="event blockB"  style="grid-column:   thu;   grid-row:  h12   /  h14;  ">
+        <p class="lilCalHeader">playBlock 3b</p>
+        <p class="lilCalText">Ahoy Company Updates and Miscellanous Weather Reports</p> 
+    </li>
+
+    <li class="event blockB"  style="grid-column:   fri;   grid-row:  h12   /  h14;  ">
+        <p class="lilCalHeader">playBlock 3b</p>
+        <p class="lilCalText">Ahoy Company Updates and Miscellanous Weather Reports</p> 
+    </li>
+
+
+
+<!-- PLAY BLOCK 4 SCHEDULE -->
+
+    <li class="event blockA"  style="grid-column:   mon;   grid-row:  h14   /  h18;  ">
+        <p class="lilCalHeader">playBlock 4a</p>
+        <p class="lilCalText">Lofi Music Videos </p>
+    </li>
+
+
+    <li class="event blockB"  style="grid-column:   tue;   grid-row:  h14   /  h18;  ">
+        <p class="lilCalHeader">playBlock 4b</p>
+        <p class="lilCalText">Skate Films</p>
+    </li>
+
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h14   /  h18;  ">
+        <p class="lilCalHeader">playBlock 4c</p>
+        <p class="lilCalText">'Ahoy Indie Now' <br> with Rob Meglio <br> Show #2 - Coulter Davis </p><br>
+    </li>
+
+    <li class="event blockA"  style="grid-column:   thu;   grid-row:  h14   /  h18;  ">
+        <p class="lilCalHeader">playBlock 4a</p>
+        <p class="lilCalText">Lofi Music Videos </p>
+    </li>
+    
+    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h14   /  h18;  ">
+        <p class="lilCalHeader">playBlock 4c</p>
+        <p class="lilCalText">'Ahoy Indie Now' <br> with Rob Meglio <br> Show #2 - Coulter Davis </p><br>
+    </li>
+
+
+<!-- PLAY BLOCK 5 SCHEDULE -->
+
+   
+    <li class="event blockA"      style="grid-column: mon;   grid-row:  h18   /  h22;  ">
+        <p class="lilCalHeader">playBlock 5a</p>
+        <p class="lilCalText">'Ahoy Indie Now' <br> with Rob Meglio <br> Show #1 : Tyler M </p><br>
+        </li>
+    
+    <li class="event blockA"      style="grid-column: tue;   grid-row:  h18   /  h22;  ">
+            <p class="lilCalHeader">playBlock 5a</p>
+            <p class="lilCalText">'Ahoy Indie Now' <br> with Rob Meglio <br> Show #1 : Tyler M </p><br>
+            </li>
+
+        <li class="event blockC"      style="grid-column: wed;   grid-row:  h18   /  h22;  ">
+            <p class="lilCalHeader">playBlock 5a</p>
+            <p class="lilCalText">'Ahoy Indie Now' <br>with Rob Meglio <br> Show #3 : Dave Gunn </p><br>
+            </li>
+
+            <li class="event blockC"      style="grid-column: thu;   grid-row:  h18   /  h22;  ">
+                <p class="lilCalHeader">playBlock 5a</p>
+                <p class="lilCalText">'Ahoy Indie Now' <br>with Rob Meglio <br> Show #3 : Dave Gunn </p><br>
+                </li>
+
+                <li class="event blockC"      style="grid-column: fri;   grid-row:  h18   /  h22;  ">
+                    <p class="lilCalHeader">playBlock 5a</p>
+                    <p class="lilCalText">'Ahoy Indie Now' <br>with Rob Meglio <br> Show #3 : Dave Gunn </p><br>
+                    </li>
+   
+
+                    <!-- PLAY BLOCK 6 SCHEDULE -->
+
+    <li class="event blockC"      style="grid-column:   mon;   grid-row:  h22   /  h22;  ">
+    <p class="lilCalHeader">playBlock 6c</p>
+    <p class="lilCalText">Misc Sawdust Mix #1</p></li>
+
+    <li class="event blockB"      style="grid-column:   tue;   grid-row:  h22   /  h23;  ">
+        <p class="lilCalHeader">playBlock 6b</p>
+        <p class="lilCalText">Latenight Buckles Mix #1</p></li>
+
+
+    <li class="event blockA"      style="grid-column:   wed;   grid-row:  h22   /  h23;  ">
+        <p class="lilCalHeader">playBlock 6a</p>
+        <p class="lilCalText">Misc Sawdust Skate Films #1</p></li>
+    
+    </li>
+    <li class="event blockC"      style="grid-column:   thu;   grid-row:  h22   /  h22;  ">
+        <p class="lilCalHeader">playBlock 6c</p>
+        <p class="lilCalText">Misc Sawdust Mix #1</p></li>
+
+        
+        <li class="event blockB"      style="grid-column:   fri;   grid-row:  h22   /  h23;  ">
+            <p class="lilCalHeader">playBlock 6b</p>
+            <p class="lilCalText">Latenight Buckles Mix #1</p></li>
 
 
     
@@ -1096,8 +1261,8 @@ img:hover {
 
 <div class="scheduleMenu">
 
-    <button>WATCH WEEKLY SCHEDULE</button>
-    <button>RADIO DAILY SCHEDULE</button>
+    <button onclick="location.href='https://ahoy.ooo/schedule'">WATCH WEEKLY SCHEDULE</button>
+    
 
 
 </div>
