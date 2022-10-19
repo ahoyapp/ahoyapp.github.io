@@ -1,5 +1,7 @@
 <html>
     <head>
+      <link rel="stylesheet" href="schedule.css">
+
         <title>Ahoy Schedule</title>
 
         <meta name="viewport" 
@@ -8,7 +10,6 @@
 <style>
       @import url('https://fonts.googleapis.com/css?family=Rubik');
 
-
 .MOBILEmenuMENU{display: none;}
 
 html {
@@ -16,13 +17,15 @@ html {
 }
 
       body {
-    
+   
   background: #000000;
   padding: 20px;
   font-family: 'Rubik';
   color:white;
+  background-size: stretch;
   background-size: cover;
-  background-repeat: no-repeat;
+    background-position: 35% 0%;
+
     background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
 }
 
@@ -52,15 +55,7 @@ p {
     }
 
 
-.outerWrapperMain {
-  background: rgba(255, 255, 255, 0.078);
-  height: 100%;
-  width: 95%;
-  margin: 0 auto;
-  padding: 20px;
-  resize: both;
-  overflow: auto;
-}
+
 
 .superFontBig {
     font-weight: 300;
@@ -72,18 +67,17 @@ p {
 }
 
 .innerYoDiv {
-  background: rgba(0, 0, 0, 0.087);
+  background: rgb(0, 0, 0);
   border-color: rgb(255, 60, 60);
   border: 3px;
   color: white;
   width: 90%;
-  height: 80%;
+  height: 85%;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 20px;
-  resize: both;
+
   overflow: auto;
   text-align:center;
 }
@@ -139,7 +133,7 @@ table {
   max-width: 100%;
   overflow-x: auto;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 @media only screen and (max-width: 755px) {
@@ -149,6 +143,18 @@ table {
     }
 }
 
+
+table td {
+    width:15%;
+
+}
+
+.tdContent{
+    width:50%;
+
+
+}
+
 table td,
 table th {
   border-top: 1px solid #eee;
@@ -156,7 +162,7 @@ table th {
   padding: 12px;
   text-align: left;
   vertical-align: middle;
-  text-align:center;
+  text-align:left;
 }
 
 table th {
@@ -524,72 +530,6 @@ img:hover {
 }
 
 
-/*MOBILE MENU */
-@media only screen and (max-width: 755px) {
-
-.MOBILEmenuMENU {
-display: block;
-min-width:70%;
-max-width: 320px;
-min-height:auto;
-/*max-height:200px;*/
-position:absolute;
-z-index: 1999;
-top: 80.5%;
-left: 50%;
-transform: translate(-50%, -50%); 
-text-align:center;
-padding-bottom:15px;
-background-color:#000000;
-
-}
-}
-
-@media only screen and (max-width: 755px) {
-
-.buttonMOBILEa {
-background-color: rgba(38, 0, 255, 0.026);
-min-width: 310px;
-min-height: 50px;
-border-style: solid;
-border-width: .15em;
-border-color:#ffffff8a;
-transform: scale(0.84);
-
-
-color:rgb(255, 255, 255);
-text-align:center;
-font-size:12px;
-}  
-
-.buttonMOBILEa:hover {
-background-color: #51000067;
-min-width: 310px;
-min-height: 50px;
-border-style: solid;
-border-width: .25em;
-border-color:#ffffff;
-
-color:rgb(255, 255, 255);
-text-align:center;
-transform: scale(.84);
-}
-}
-
-
-button{
-    background-color:#cecece;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    background: transparent;
-    border: none;
-    cursor:pointer;
-
-}
 
 
 .newTonight {
@@ -818,11 +758,19 @@ img:hover {
 
 /* END OF AG NEW STYLES */
 
-
+.scheduleSpecialText {
+    color:white;
+    font-size:12px;
+    text-align:center;
+    font-family:rubik;
+    text-transform: uppercase;
+    padding:20px;
+}
 
 </style>
     </head>
     <body>
+
 
 
 
@@ -840,8 +788,7 @@ img:hover {
  
  <!-- END OF MOBILE TICKER -->
 
-    
-    <br><br>
+
 <div class="outerWrapperMain">
 
 <div class="innerYoDiv">
@@ -852,12 +799,72 @@ img:hover {
            
             <!--  Table  -->
             <div class="table-responsive">
-                <h1>Watch Schedule</h1>
+                <h1>Watch Schedule Lineup</h1>
               <table id="watch-table" class="advanced-web-table">
                 <thead>
                   <tr>
-                    <th>Time</th>
-                    <th>playBlock</th>
+                    <th>Time Slot</th>
+                    <th>Media Showcasing</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+
+                  <tr>
+
+                    <td>7am-10am</td>
+                    <td>Day Old Bagels : Aka Classic Content</td>
+                  </tr>
+
+                  <tr>
+
+                    <td>10am-1pm</td>
+                    <td>Ahoy Daytime Clips</td>
+                  </tr>
+
+                  <tr>
+                    <td>1pm-4pm</td>
+
+                    <td>Skate Clips and Music Videos</td>
+                  </tr>
+
+                  <tr>
+                    <td>4pm-6pm</td>
+
+                    <td>Ahoy Past Weekly</td>
+                  </tr>
+
+                  <tr>
+                    <td>7pm-12am</td>
+
+                    <td>Primetime : Rob Show Episode 5 : Andrew Leverton</td>
+                  </tr>
+
+                  <tr>
+                    <td>12am - 7am</td>
+
+                    <td>The Late Night Wild Mix</td>
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Start of TABLE OF MEDIA CONTENTS -->
+        <div class="container">
+            <!--  Introduction  -->
+           
+            <!--  Table  -->
+            <h1>Radio Lineup</h1>
+            <div class="table-responsive">
+
+              <table id="watch-table" class="advanced-web-table">
+                <thead>
+                  <tr>
+
+                    <th>Time</th>                
                     <th>Media Contents</th>
                   </tr>
                 </thead>
@@ -866,40 +873,50 @@ img:hover {
 
                   <tr>
                     <td>7am-10am</td>
-                    <td>playBlock1</td>
-                    <td>Ahoy Classic Content</td>
+
+                    <td>Morning Pop</td>
                   </tr>
 
                   <tr>
                     <td>10am-1pm</td>
-                    <td>playBlock2</td>
-                    <td>Ahoy Daytime Clips</td>
+
+                    <td>Mid-Morning</td>
                   </tr>
 
                   <tr>
                     <td>1pm-4pm</td>
-                    <td>playBlock3</td>
-                    <td>Skate Clips and Music Videos</td>
+
+                    <td>Daytime Pop</td>
                   </tr>
 
                   <tr>
                     <td>4pm-6pm</td>
-                    <td>playBlock4</td>
-                    <td>Ahoy Past Weekly</td>
+
+                    <td>MidDay Grunge</td>
                   </tr>
 
                   <tr>
-                    <td>7pm-12am</td>
-                    <td>playBlock5</td>
-                    <td>Primetime : Rob Show Episode 5</td>
+                    <td>7pm-10pm</td>
+
+                    <td>Primetime Pop</td>
                   </tr>
 
                   <tr>
-                    <td>12am - 7am</td>
-                    <td>playBlock6</td>
-                    <td>The Late Night Wild Mix</td>
+                    <td>10pm - 12am</td>
+
+                    <td>Late Night Buckles</td>
+
                   </tr>
-              
+
+                  <tr>
+                    <td>1am - 3am</td>
+                    <td>Late Night Experimental</td>
+                  </tr>
+
+                  <tr>
+                    <td>4am - 7am</td>
+                    <td>Classical Takeover</td>
+                  </tr>
 
 
 
@@ -909,15 +926,19 @@ img:hover {
           </div>
     
     
+
     
-    
-    
-    
-    
-    
+    <div class="mobileSpacer">
+        <p class="scheduleSpecialText">New content every Thursday at 7</p>
     </div>
-       
-          </div>
+    
+    
+
+</div>
+
+
+
+
 
 
 
