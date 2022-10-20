@@ -1,7 +1,7 @@
 
 h1 {
     font-size:24px;
-    font-weight: 300;
+    font-weight: 900;
 }
 
 table {
@@ -13,7 +13,7 @@ td {
 }
 
 .outerWrapperMain {
-    background: rgba(4, 0, 255, 0.332)!important;
+    background: rgba(4, 0, 255, 0.091)!important;
     height: 90%;
     width: 95%;
     margin: 0 auto;
@@ -120,3 +120,30 @@ td {
     /*Mobile Spacer OFF on Desktop */
 
     /* .mobileSpacer {display:none;} */
+
+
+.thTime {
+    text-align:right!important;
+}
+
+    .tdTime {
+        width:15%;
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    .tdDesc {
+        text-align:left;
+    }
+
+    th {
+        text-align:left!important;
+    }
+
+    table {
+        
+        position:static;
+    }
+
+    @media only screen and (max-width: 600px) {
+        max-width:550px;
+    }
