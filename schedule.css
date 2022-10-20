@@ -128,7 +128,8 @@ td {
 
     .tdTime {
         width:15%;
-        background-color: rgba(0, 255, 255, 0);
+        background-color: rgba(159, 255, 255, 0);
+        text-transform: uppercase;
     }
 
     .tdDesc {
@@ -144,6 +145,78 @@ td {
         position:static;
     }
 
-    @media only screen and (max-width: 600px) {
-        max-width:550px;
+
+
+
+    /*h1 STYLES */
+
+    .h1Schedule {
+        color:rgb(100, 185, 255);
+        padding-top:10px;
+        padding-bottom:10px;
+        letter-spacing: 15.3px;
+        text-transform:uppercase;
     }
+
+    @media only screen and (max-width: 600px) {
+
+        .h1Schedule {
+
+            color:rgb(100, 185, 255);
+        padding-top:10px;
+        padding-bottom:10px;
+        letter-spacing: 5.3px;
+        text-transform:uppercase;
+        font-size:16px;
+        text-align:center;
+        font-weight:900;
+        }
+    }
+
+    /* INNER STYLESZ */
+
+
+    .innerYoDiv {
+        background: rgba(0, 0, 0, 0.488);
+        background-blend-mode: exclusion;
+        border: 3px;
+        border-style:solid;
+        border-color: rgba(0, 140, 255, 0.645);
+        color: white;
+        width: 90%;
+        height: 85%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      
+        overflow: auto;
+        text-align:center;
+
+        padding-bottom:20px;
+        
+      }
+
+      @media only screen and (max-width: 600px) {
+
+        .innerYoDiv {
+            background: rgba(0, 0, 0, 0.488);
+            background-blend-mode: exclusion;
+            border: 3px;
+            border-style:solid;
+            border-color: rgba(0, 251, 255, 0.645);
+            color: white;
+            width: 90%;
+            height: 85%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 44%;
+            left: 50%;
+          
+            overflow: auto;
+            text-align:center;
+    
+            padding-bottom:20px;
+            
+          }
+        }
