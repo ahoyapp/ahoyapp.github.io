@@ -1,19 +1,30 @@
 <html>
     <head>
-<title>ahoy Main Menu - build 1005a </title>
+<title>Ahoy Indie Media</title>
 <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- META META META -->
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta property="og:title" content="Ahoy Indie Media">
+<meta property="og:type" content="app" />
+<meta property="og:description" content="24/7 Free Hand Crafted - Indie Media">
+<meta property="og:image" content="#">
+<meta name="twitter:card" content="Ahoy Indie Media">
 <style>
     @import url('https://fonts.googleapis.com/css?family=Rubik');
     body
     
     {
 
-
+/*
     
         background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+
+        */
     background-size: cover;
-    
+    */
     
     
     height: 100vh;
@@ -168,8 +179,9 @@ img:hover {
 
         background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
     background-size: cover;
-    background-position: 35% -20%;
+    /*background-position: 35% -20%;*/
     padding:0px;
+    height:100%;
 
   }
 
@@ -181,6 +193,7 @@ img:hover {
     font-size: 20px;
     text-align: center;
     width: 100%;
+    min-width:400px;
 
 }
 
@@ -212,6 +225,10 @@ img:hover {
     display:block;
 }
 
+.center {
+    min-width:200px;
+}
+
 }
 
 </style>
@@ -226,7 +243,7 @@ img:hover {
                         </a>
                         </div>
                     
-<p class="superFontLittle">build 1005G</p>
+<p class="superFontLittle">menu build 1010<br>presently this page is a little busted on the phone <br>we're on it - be crispy soon</p>
             
                 </div>
                     
@@ -251,5 +268,73 @@ img:hover {
 </div>
 </div></div>
 
+
+<!-- THE CODE THAT IS GOING TO DYMANICALLY CHANGE THE BACKGROUND IMAGES
+<button type="button" onclick="myFunction()">Change background image</button> -->
+
+<script>
+
+
+    day = new Date()
+    hr = day.getHours()
+
+
+    if (hr == 8) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 9) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.makeagif.com/media/9-07-2015/gSknpw.gif')";
+
+    }
+
+    if (hr == 10) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/x-ykFer_yJQAAAAM/equatorialcorals-deepseacorals.gif')";
+
+    }
+
+    if (hr == 11) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 12) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.makeagif.com/media/9-07-2015/gSknpw.gif')";
+
+    }
+
+    if (hr == 13) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 14) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+</script>
+
+<script>
+function myFunction() {
+    document.body.style.backgroundImage = "url('https://media.tenor.com/x-ykFer_yJQAAAAM/equatorialcorals-deepseacorals.gif')";
+
+}
+</script>
 </body>
 </html>
