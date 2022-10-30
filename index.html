@@ -18,26 +18,13 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     
     {
 
-/*
-    
-        background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
-
-        */
-    background-size: cover;
-    */
-    
-    
-    height: 100vh;
-    padding:50px;
-    margin:0;
-
-
+        background-image: url('https://www.icegif.com/wp-content/uploads/2022/02/icegif-536.gif');
+        background-size: cover;
+        height: 100vh;
+        padding:50px;
+        margin:0;
     }
 
-
-
-
-    
 .superFont {
     font-weight: 900;
     font-size: 17px;
@@ -231,9 +218,93 @@ img:hover {
 
 }
 
+
+#mobileOnlyBaby {
+    display:none;
+}
+
+@media only screen and (max-width: 600px) {
+    #mobileOnlyBaby {
+        display:block;
+    }
+}
+@media only screen and (max-width: 600px) {
+.outerBoxMenu 
+{display:none;}
+}
+.mMenuItem {
+    background-color:rgba(255, 255, 255, 0.042);
+    border-color:white;
+    border-style:solid;
+    text-align:center;
+    width:100%;
+    cursor: pointer;
+    margin-top:5px;
+}
+
+.mMenuItem:hover {
+    border-color:white;
+    border-style:solid;
+    text-align:center;
+    background-color:rgba(255, 255, 255, 0.574);
+    width:100%;
+    cursor: pointer;
+    margin-top:5px;
+}
+
+.mobileLogoWrap {
+    text-align:center;
+}
+
+.mobileLogoImage {
+    max-width:300px;
+    height:auto;
+    padding:20px;
+}
+
+.changeBackgroundMagic {
+    display:none;
+}
+
 </style>
 </head>
 <body>
+
+<!-- MOBILE ONLY MENU BABY -->
+
+<div id="mobileOnlyBaby">
+    <div class="mobileLogoWrap">
+        <img class="mobileLogoImage" src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
+    </div>
+    <div class="mMenuItem">
+        <a href="https://watch.ahoy.ooo">
+            <div class="mobileMenuItem">
+             <p class="superFont">watch</p></div>
+        </a>
+    </div>
+
+    <div class="mMenuItem">
+        <a href="https://watch.ahoy.ooo">
+            <div class="mobileMenuItem">
+             <p class="superFont">radio</p></div>
+        </a>
+    </div>
+
+    <div class="mMenuItem">
+        <a href="https://watch.ahoy.ooo">
+            <div class="mobileMenuItem">
+             <p class="superFont">schedule</p></div>
+        </a>
+    </div>
+
+
+    </div>
+  
+</div>
+
+
+<!-- END OF MOBILE ONLY BABY -->
+
 
 <div class="outerBoxMenu">
 <div class="innerBoxMenuA">
@@ -243,7 +314,7 @@ img:hover {
                         </a>
                         </div>
                     
-<p class="superFontLittle">menu build 1010<br>presently this page is a little busted on the phone <br>we're on it - be crispy soon</p>
+<p class="superFontLittle">menu build 1010a<br>presently this page is a little busted on the phone <br>we're on it - be crispy soon</p>
             
                 </div>
                     
@@ -269,14 +340,42 @@ img:hover {
 </div></div>
 
 
-<!-- THE CODE THAT IS GOING TO DYMANICALLY CHANGE THE BACKGROUND IMAGES
-<button type="button" onclick="myFunction()">Change background image</button> -->
+<!-- THE CODE THAT IS GOING TO DYMANICALLY CHANGE THE BACKGROUND IMAGES -->
+<div class="changeBackgroundMagic">
+<button type="button" onclick="changeBackground()">Change background image</button> 
+</div>
+
+
+
 
 <script>
 
 
     day = new Date()
     hr = day.getHours()
+
+
+
+    if (hr == 5) {
+  //5am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/FrayedQuaintAnteater-max-1mb.gif')";
+    //Morning Tide//
+    }
+
+    if (hr == 6) {
+  //6am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://www.icegif.com/wp-content/uploads/2022/02/icegif-536.gif')";
+    //Morning Tide//
+    }
+
+    if (hr == 7) {
+  //7am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/BackLankyGangesdolphin-size_restricted.gif')";
+    //Morning Tide//
+    }
 
 
     if (hr == 8) {
@@ -303,7 +402,8 @@ img:hover {
     if (hr == 11) {
   
   document.body.style.backgroundColor = "#acaca3"; 
-  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+  document.body.style.backgroundImage = "url('https://i.gifer.com/ARqO.gif')";
+  //Shark//
 
     }
 
@@ -315,24 +415,93 @@ img:hover {
     }
 
     if (hr == 13) {
-  
+  //1pm//
   document.body.style.backgroundColor = "#acaca3"; 
   document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
 
     }
 
     if (hr == 14) {
-  
+  //2pm//
   document.body.style.backgroundColor = "#acaca3"; 
   document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
 
     }
 
+    if (hr == 15) {
+        //3pm//
+        document.body.style.backgroundColor = "#acaca3"; 
+        document.body.style.backgroundImage = "url('https://s.yimg.com/uu/api/res/1.2/rVdUX8eVa31S_5JDCvvp0A--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.storyful.com/866362344b92b1cb1d9c3a36db9b0520')";
+
+    }
+
+    if (hr == 16) {
+        //4pm//
+        document.body.style.backgroundColor = "#acaca3"; 
+        document.body.style.backgroundImage = "url('https://s.yimg.com/uu/api/res/1.2/rVdUX8eVa31S_5JDCvvp0A--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.storyful.com/866362344b92b1cb1d9c3a36db9b0520')";
+
+    }
+
+
+
+    if (hr == 17) {
+  //5pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/S8_V9lNMc3oAAAAM/waves-awesome.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 18) {
+  //6pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/S8_V9lNMc3oAAAAM/waves-awesome.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 19) {
+  //7pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://bestanimations.com/media/yachts/627188316sailboat-yacht-sailing-animated-gif-11.gif')";
+    //YachtCU//
+    }
+
+    if (hr == 20) {
+  //8pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/AccomplishedVillainousDrever-size_restricted.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 22) {
+  //10pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/c6/36/2e/c6362e4ca5fa5e887c6b9ddfcb82c13d.gif')";
+    //BeachStar//
+    }
+
+
+    if (hr == 23) {
+  //11pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/fc/38/97/fc389789c5fbe80b36df05e8ee441c66.gif')";
+    //Star//
+    }
+
+    if (hr == 24) {
+  //12pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://c.tenor.com/lWbWfolwJfIAAAAC/ocean-night.gif')";
+    //MidNight _ Star//
+    }
+
 </script>
 
 <script>
-function myFunction() {
-    document.body.style.backgroundImage = "url('https://media.tenor.com/x-ykFer_yJQAAAAM/equatorialcorals-deepseacorals.gif')";
+function changeBackground() {
+    document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/FrayedQuaintAnteater-max-1mb.gif')";
 
 }
 </script>
