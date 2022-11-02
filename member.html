@@ -11,11 +11,12 @@ body {
     background-image: url('https://www.icegif.com/wp-content/uploads/2022/02/icegif-536.gif');
         background-size: cover;
         font-family:rubik;
+        padding:20px;
 }
 
 
         .headerSplash {
-            height:300px;
+            height:250px;
             width:100%;
             text-align:center;
             align-items: center;
@@ -26,6 +27,9 @@ body {
             display:flex;
             flex-direction:column;
             text-transform: uppercase;
+            border-style:solid;
+            border-color:black;
+            border-width:3px;
         }
 
         .menuActionRow 
@@ -39,8 +43,7 @@ body {
           justify-content: center;
           width:100%;
           height:200px;
-          margin:10px;
-          background-color:rgba(0, 255, 255, 0.217);
+          background-color:rgb(255, 255, 255);
             border-style:solid;
             border-width:3px;
             border-color:rgb(0, 0, 0);
@@ -49,6 +52,8 @@ body {
             gap:5px;
             text-align:center;
             font-weight:900;
+            margin:5px;
+            margin-top:10px;
     
         }
 
@@ -58,7 +63,21 @@ body {
             text-align:center;
             height:auto;
             width:auto;
-            background-color:rgb(229, 255, 0);
+            background-color:rgba(127, 255, 212, 0.439);
+            border-style:solid;
+            border-width:3px;
+            border-color:aquamarine;
+            text-decoration:none;
+            color:black;
+        }
+
+        .linkACTION:hover {
+            font-size:16px;
+            padding:20px;
+            text-align:center;
+            height:auto;
+            width:auto;
+            background-color:aquamarine;
             border-style:solid;
             border-width:3px;
             border-color:aquamarine;
@@ -71,6 +90,25 @@ body {
             height:auto;
         }
 
+        .menuItemHeader {
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width:100%;
+          height:200px;
+          background-color:rgb(255, 255, 255);
+            border-style:solid;
+            border-width:3px;
+            border-color:rgb(0, 0, 0);
+            text-decoration:none;
+            color:rgb(0, 0, 0);
+            text-align:center;
+            font-weight:900;
+            margin-top: 10px;
+    
+        }
+
     </style>
 </head>
 <body>
@@ -79,21 +117,30 @@ body {
         <img class="imgAhoyLogo"src="https://i.ibb.co/S5hrxDL/ahoy-logo-web-2-1.png">
                     </a>
                     <p>
-    Become a member of Ahoy Indie Media - Right Now - Today</p>
+    Join Ahoy Indie Media - Instantly - Today </p>
   </div>
+
+  <div class="menuItemHeader">
+    <h3>Already a member?</h3> <br>
+    <a class="linkACTION" href="#/ms/signup/635fbe0622ded60004f597ba">View My Official Ahoy Indie Media Member Profile Information</a>
+</div>
+
 
   <div class="menuActionRow">
     <div class="menuItem">
-        Happy Camper Edition<br>
-         Receive a little bit of love
-    <a class="linkACTION" href="#/ms/signup/635fbdb822ded60004f597b3">Happy Camper Signup/Login</a>
+        <h3>Happy Camper</h3>
+         *FREE* - Receive a little bit of love
+    <a class="linkACTION" href="#/ms/signup/635fbdb822ded60004f597b3">Join Ahoy as a Happy Camper</a>
 </div>
 <div class="menuItem">
-    Ahoy Team Member  <br>
-    Paid Plan - Receive a lot of bit of love
-    <a class="linkACTION" href="#/ms/signup/635fbe0622ded60004f597ba">Ahoy Team Member Signup/Login</a>
+    <h3>Super Happy Camper</h3>
+    *Paid Plan* - Receive a lot of bit of love
+    <a class="linkACTION" href="#/ms/signup/635fbe0622ded60004f597ba">Join Ahoy as a Super Happy Camper</a>
 </div>
+
   </div>
+
+
 
 
 
