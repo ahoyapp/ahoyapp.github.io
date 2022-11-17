@@ -4,11 +4,20 @@
             Fund Ahoy
         </title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Cubano&display=swap');
         body {
             background-color:rgb(255, 21, 103);
+            font-family: 'Muli', sans-serif;
+         
             
         }
 
+        p{
+            text-transform:uppercase;
+            font-family: 'Cubano', sans-serif;
+            font-weight:900;
+        }
 
 .mainContainer {
     width:100%;
@@ -21,7 +30,7 @@
   font-family: arial;
   font-size: 16px;
   margin: auto;
-  width: 595px;
+  width: 920px;
   height: auto;
   outline: dashed 1px rgba(0, 0, 0, 0);
   /* Center vertically and horizontally */
@@ -38,6 +47,8 @@
   background-color: rgba(255, 0, 0, 0);
   text-align:center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -54,6 +65,9 @@
 .imageLogo {
     width:100%;
     height:auto;
+    
+
+
 }
 
 .fundRow {
@@ -74,49 +88,18 @@
 <div class="mainContainer">
         <div class="container">
             <div class="child">
-              
-         <img class="imageLogo" src="fundahoylogo1.png">
-         <img src="sample1.png">
-         <div class="fundRow">
-    
-            <form>
-                <label for="USDamount">USD</label>
-                <input type="number" id="USDamount" name="amountUSD">
-                <label for="DAI_AMOUNT">Dai Current $0.99985</label>
-                <input type="submit">
-            </form>
-           
-            
-        </div>
-         <button class="fundButton">Fund Ahoy</button>
+              <a href="https:ahoy.ooo">
+         <img class="imageLogo" src="ahoy.png"></a>
+
+<p>Help build the next generation of indie media</p>
+<br>
+         <a href="https://commerce.coinbase.com/checkout/cf23c417-66e7-4778-88f1-8d4e55de500e">
+         <button class="fundButton">Fund Ahoy</button></a>
             </div>
         </div>
     </div>
   
 
-
-<div class="innerChild">
-    Row 1
-</div>
-<div class="innerChild">
-    Row 2
-</div>
-<div class="innerChild">
-    Row 3
-</div>
-
-
-<div class="fundRow">
-    
-    <form>
-        <label for="USDamount">USD</label>
-        <input type="number" id="USDamount" name="amountUSD">
-        <label for="DAI_AMOUNT">Dai Current $0.99985</label>
-        <input type="submit">
-    </form>
-   
-    
-</div>
 
 </body>
 
