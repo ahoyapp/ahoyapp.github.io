@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>
+            Fund Ahoy
+        </title>
+    <style>
+        body {
+            background-color:rgb(255, 21, 103);
+            
+        }
+
+
+.mainContainer {
+    width:100%;
+    height:70%;
+    display:flex;
+}
+
+
+.container {
+  font-family: arial;
+  font-size: 16px;
+  margin: auto;
+  width: 595px;
+  height: auto;
+  outline: dashed 1px rgba(0, 0, 0, 0);
+  /* Center vertically and horizontally */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0);
+  text-align:center;
+  flex-wrap: wrap;
+
+}
+
+.fundButton {
+    background-color:white;
+    background-image:"button_Fund.png"; 
+    width:390px;
+    height:70px;
+    outline: solid 1px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size:22px;
+}
+
+.imageLogo {
+    width:100%;
+    height:auto;
+}
+
+.fundRow {
+    background-color:white;
+    width:350px;
+    height:auto;
+    text-align:center;
+    flex-wrap:wrap;
+}
+
+    </style>
+    </head>
+    <body>
+
+
+
+
+<div class="mainContainer">
+        <div class="container">
+            <div class="child">
+              
+         <img class="imageLogo" src="fundahoylogo1.png">
+         <img src="sample1.png">
+         <div class="fundRow">
+    
+            <form>
+                <label for="USDamount">USD</label>
+                <input type="number" id="USDamount" name="amountUSD">
+                <label for="DAI_AMOUNT">Dai Current $0.99985</label>
+                <input type="submit">
+            </form>
+           
+            
+        </div>
+         <button class="fundButton">Fund Ahoy</button>
+            </div>
+        </div>
+    </div>
+  
+
+
+<div class="innerChild">
+    Row 1
+</div>
+<div class="innerChild">
+    Row 2
+</div>
+<div class="innerChild">
+    Row 3
+</div>
+
+
+<div class="fundRow">
+    
+    <form>
+        <label for="USDamount">USD</label>
+        <input type="number" id="USDamount" name="amountUSD">
+        <label for="DAI_AMOUNT">Dai Current $0.99985</label>
+        <input type="submit">
+    </form>
+   
+    
+</div>
+
+</body>
+
+</html>
