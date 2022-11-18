@@ -9,8 +9,8 @@
 content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta property="og:title" content="Ahoy Indie Media">
 <meta property="og:type" content="app" />
-<meta property="og:description" content="24/7 Free Hand Crafted - Indie Media">
-<meta property="og:image" content="#">
+<meta property="og:description" content="24/7 Semi Live - homeMade - Indie Media ">
+<meta property="og:image" content="Ahoy Indie Media">
 <meta name="twitter:card" content="Ahoy Indie Media">
 <style>
     @import url('https://fonts.googleapis.com/css?family=Rubik');
@@ -23,6 +23,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         height: 100vh;
         padding:50px;
         margin:0;
+        font-family: rubik;
     }
 
 .superFont {
@@ -56,7 +57,6 @@ a {
     text-decoration: none;
 }
 
-
 .imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
@@ -77,32 +77,13 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a5;
+    
     border-radius: 5px;
 }
 
-.outerBox:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.innerBox:hover{
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  background-color:rgba(255, 255, 255, 0.199);
-}
-
-.center:hover{
-  box-shadow: 0 0 2px 5px rgb(15, 245, 230);
-}
-
-
-
-
-
-
-
 .innerBoxMenuA {
     background: #002d5514;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
+
     border-radius: 5px;
     padding: 30px;
     font-size: 20px;
@@ -113,7 +94,7 @@ img:hover {
 
 .innerBoxMenuB {
     background: #002d5514;
-    box-shadow: 0px 0px 6px 0px #1b2eff68;
+
     border-radius: 5px;
     padding: 30px;
     font-size: 20px;
@@ -135,7 +116,7 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 6px 0px #361bff70;
+
     border-radius: 5px;
 }
 
@@ -175,7 +156,6 @@ img:hover {
 
   .innerBoxMenuA {
     background: #002d5514;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
     border-radius: 5px;
     padding: 30px;
     font-size: 20px;
@@ -187,14 +167,12 @@ img:hover {
 
 .innerBoxMenuB {
     width:100%;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
 
 }
 
 .outerBoxMenu {
    display:block;
    height:70vh;
-   box-shadow: 0px 0px 6px 0px #ff009015;
 }
 
 .imgAhoyLogo {
@@ -205,9 +183,7 @@ img:hover {
   height: auto;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
-}
+
 
 .row {
     display:block;
@@ -230,12 +206,19 @@ img:hover {
     }
 }
 @media only screen and (max-width: 600px) {
+
+body {
+    padding:25px;
+
+}
+
+
 .outerBoxMenu 
 {display:none;}
 }
 .mMenuItem {
     background-color:rgba(255, 255, 255, 0.042);
-    border-color:white;
+    border-color:rgba(255, 255, 255, 0.334);
     border-style:solid;
     text-align:center;
     width:100%;
@@ -244,13 +227,14 @@ img:hover {
 }
 
 .mMenuItem:hover {
-    border-color:white;
+    border-color:rgb(0, 255, 208);
     border-style:solid;
     text-align:center;
-    background-color:rgba(255, 255, 255, 0.574);
+    background-color:rgba(0, 0, 0, 0.574);
     width:100%;
     cursor: pointer;
     margin-top:5px;
+    color:white;
 }
 
 .mobileLogoWrap {
@@ -267,6 +251,58 @@ img:hover {
     display:none;
 }
 
+
+/* FUND BUTTON DESKTOP */
+
+.buttonFundAhoy{
+        position:absolute;
+        bottom: 50;
+        left: 10;
+        width:100px;
+        height:45px;
+        
+        text-align:center;
+        border-style:solid;
+        border-color:rgba(255, 255, 255, 0.238);
+        background-color:rgba(255, 255, 255, 0);
+        font-family:Rubik;
+        color:white;
+        text-transform: uppercase;
+        font-weight:600;
+
+
+    }
+
+    .buttonFundAhoy:hover{
+        position:absolute;
+        bottom: 50;
+        left: 10;
+        width:100px;
+        height:45px;
+        
+        text-align:center;
+        border-style:solid;
+        border-color:white;
+        background-color:rgba(255, 255, 255, 0.286);
+        font-family:Rubik;
+        color:white;
+        text-transform: uppercase;
+        font-weight:600;
+        cursor: pointer;
+
+
+    }
+
+    /* Fund Button - MOBILE */
+    @media only screen and (max-width: 600px) {
+.buttonFundAhoy {
+    position:fixed;
+    bottom: 50;
+        left: 10;
+}
+    }
+
+
 </style>
 </head>
 <body>
@@ -275,6 +311,7 @@ img:hover {
 
 <div id="mobileOnlyBaby">
     <div class="mobileLogoWrap">
+        <br>
         <img class="mobileLogoImage" src="https://i.ibb.co/S5hrxDL/ahoy-logo-web-2-1.png">
     </div>
     
@@ -297,6 +334,12 @@ img:hover {
         <a href="https://watch.ahoy.ooo">
             <div class="mobileMenuItem">
              <p class="superFont">watch</p></div>
+        </a>
+    </div>
+    <div class="mMenuItem">
+        <a href="https://ahoy.ooo/fund">
+            <div class="mobileMenuItem">
+             <p class="superFont">fund</p></div>
         </a>
     </div>
 
@@ -345,12 +388,23 @@ img:hover {
 </div></div>
 
 
+
 <!-- THE CODE THAT IS GOING TO DYMANICALLY CHANGE THE BACKGROUND IMAGES -->
 <div class="changeBackgroundMagic">
 <button type="button" onclick="changeBackground()">Change background image</button> 
 </div>
 
+<!-- Fund Button Left-->
 
+<style>
+
+</style>
+
+<div>
+    <a href="https://ahoy.ooo/fund"><button class="buttonFundAhoy">Fund Ahoy</button></a>
+</div>
+
+<!-- END of Fund-->
 
 
 <script>
