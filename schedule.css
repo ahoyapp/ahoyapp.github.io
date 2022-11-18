@@ -220,3 +220,661 @@ td {
             
           }
         }
+
+
+
+        
+        .MOBILEmenuMENU{display: none;}
+        
+        html {
+            height:95%;
+        }
+        
+              body {
+           
+          background: #000000;
+          padding: 20px;
+          font-family: 'Rubik';
+          color:white;
+        
+          background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+          background-size: cover;
+          background-position: 50% 80%;
+        }
+        
+        p {
+            color:black;
+            font-family: 'Rubik';
+        }
+        
+        /**************************************/
+        /***************GENERAL****************/
+        /**************************************/
+        
+        * {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        *:before,
+        *:after {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        
+        .container {
+          margin-right: auto;
+          margin-left: auto;
+          max-width: 1170px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        
+        
+        /**************************************/
+        /****************TABLE*****************/
+        /**************************************/
+        
+        .table-responsive {
+          overflow-x: auto;
+        }
+        
+        table {
+          border: 1px solid #ddd;
+          border-collapse: collapse;
+          border-radius: 3px;
+          color: rgb(255, 255, 255);
+          display: table;
+          font-size: 16px;
+          max-width: 100%;
+          overflow-x: auto;
+          position: relative;
+          width: auto;
+        }
+        
+        @media only screen and (max-width: 755px) {
+        
+            table {
+                width: 30%;
+            }
+        }
+        
+        
+        table td {
+            width:15%;
+        
+        }
+        
+        .tdContent{
+            width:50%;
+        
+        
+        }
+        
+        
+        
+        table td,
+        table th {
+          border-top: 1px solid #eee;
+          display: table-cell;
+          padding: 12px;
+        
+        }
+        
+        table th {
+          border-bottom: 2px solid #eee;
+          vertical-align: middle;
+        }
+        
+        .item-cell {
+          padding: 2px 12px;
+          /* use for cells containing buttons, sliders, etc. */
+        }
+        
+        
+        /**************************************/
+        /************FORMS & INPUTS************/
+        /**************************************/
+        
+        .form-control {
+          margin: 0.5rem 0;
+          position: relative;
+        }
+        
+        input,
+        select,
+        textarea {
+          background: rgb(255, 255, 255) none repeat scroll 0 0;
+          border: 1.5px solid #ddd;
+          border-radius: 3px;
+          color: #666;
+          display: block;
+          font-size: 13px;
+          line-height: 1.25;
+          max-width: 100%;
+          padding: 6px 12px;
+          position: relative;
+          width: 100%;
+        }
+        
+        input::-moz-placeholder,
+        select::-moz-placeholder,
+        textarea::-moz-placeholder {
+          color: #999;
+          opacity: 1;
+        }
+        
+        input:focus,
+        textarea:focus {
+          border: 1px solid #a20dff15;
+          outline: medium none;
+          background-color: rgba(255, 255, 255, 0.194);
+        }
+        
+        input:disabled,
+        textarea:disabled,
+        select:disabled {
+          background-color: #eee;
+          color: #999;
+          cursor: not-allowed;
+          opacity: 1;
+        }
+        
+        .inline input,
+        .inline select,
+        .inline textarea {
+          display: inline-block;
+          width: auto;
+        }
+        
+        /********** Search Bar **********/
+        input[type="search"] {
+          border-width: 2px;
+          display: inline-block;
+          padding-left: 2.5em;
+          transition: width 0.4s ease-in-out 0s;
+          width: 150px;
+        }
+        
+        input[type="search"]:focus {
+          width: 60%;
+        }
+        
+        label[for="search"] {
+          bottom: 6px;
+          color: #999;
+          left: 1em;
+          position: absolute;
+          z-index: 1;
+        }
+        
+        [contenteditable]:hover {
+          background-color: #f8f8f8;
+          cursor: cell;
+        }
+        
+        [contenteditable]:focus {
+          background-color: #f8f8f8;
+        }
+        
+        
+          /* AHOY TICKER STYLE  */
+        
+        
+          .ahoy_ticker {
+            position: fixed;
+        
+          left: 1%;
+          /*top: auto; */
+          right: 1%;
+          /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+          bottom: 1.5%;
+          width: 98%;
+          height: 90px;
+            /* OVERFLOW SETTINGS */
+        overflow:none;
+          overflow-y: hidden;
+          background-color: #0000004b;
+          outline-color: #FFFFBC;
+          outline-offset: 0px;
+          outline-style: solid;
+          outline-width: 1px;
+          vertical-align: auto;
+        
+        }
+         /* Create three equal columns that floats next to each other */
+         .ahoyTickerCol {
+                  float: left;
+                  width: 25%;
+                     min-height:100%;
+                  padding: 5px;
+                  background-color: #0b030c97;
+                  max-width: 25%;
+        
+        
+                }
+                .ahoyTickerCol:hover {
+                  float: left;
+                  width: 25%;
+                 min-height:100%;
+                  padding: 5px;
+                  background-color: #0b030c97;
+                  max-width: 25%;
+        
+                }
+        
+                .ahoyTickerColMIDDLE {
+                  float: left;
+                  width: 40%;
+                  min-height: 100%;
+                  padding: 10px;
+                  font-family: "Rubik";
+                  text-align:center;
+                  background-color: #0b030c97; 
+        
+        
+                }
+        
+               
+            
+                .ahoyTickerColTIME {
+                    background-color: #0b030c97;
+                  float: left;
+                  min-height: 100%;
+                  width: 31%;
+                  padding-top: 5px;
+                  padding-bottom: 20px;
+                  font-family: "rubik";
+                  text-align: right;
+                  left: 50%;
+                    top: 50%;
+        
+        
+                }
+        
+                .ahoyTickerColWrap
+                {
+                    width: 100%;
+                    align-items: top;
+                    text-align:center;
+                 }
+        
+                .ayeTitle {
+                    font-weight:500;
+                    font-size:14px;
+                }
+        
+        .imgAhoyLogo {
+          border: 11px solid rgba(221, 221, 221, 0.016);
+          border-radius: 4px;
+          padding: 5px;
+          margin-right: 10px;
+          width: 100px;
+          height:auto;
+          float:left;
+        
+        }
+        
+        img:hover {
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        
+          /* END OF AHOY TICKER STYLE  */
+        
+        
+                
+        
+        
+        #spanTITLE
+        { 
+            font-family:Rubik, serif;
+                    font-weight: 900;
+                    font-size:16px;
+                    text-align:center;
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    color:#FF5E7C;
+                    text-transform: uppercase;
+        }
+        
+        .superFontBig {
+            font-weight: 300;
+            font-size: 32px;
+            font-family: rubik;
+            color:rgba(0, 0, 0, 0.707);
+            text-transform: uppercase;
+        
+        }
+        
+        .superFontLink {
+            font-weight: 300;
+            font-size: 16px;
+            font-family: rubik;
+            color:rgba(255, 255, 255, 0.219);
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 25px;
+            border: 1px;
+            border-color:white;
+        
+        }
+        
+        .superFontLink:hover{
+          color:white;
+        }
+        
+        
+        .superFont {
+            font-weight: 300;
+            font-size: 12px;
+            font-family: rubik;
+            color:rgba(250, 250, 250, 0.219);
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 25px;
+            border: 1px;
+            border-color:white;
+        
+        }
+        
+        
+        
+        @media only screen and (max-width: 600px) {
+        
+        
+          body {
+        
+            background-size: cover;
+            background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+          }
+        
+        
+        
+           /*-- Outer Box CSS --*/
+           .outerBox {
+            height: 60vh;
+            background: #00000000;
+            padding: 0 20px;
+            margin: 50px 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 6px 0px #ffafaf00;
+            border-radius: 5px;
+        }
+        
+        /*-- Inner Box CSS --*/
+        .innerBox {
+            background: #05c4dd03;
+            box-shadow: 0px 0px 6px 0px #e72eff;
+            border-radius: 10px;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+        
+        
+        .advanced-web-table {
+            text-align:center;
+        }
+        
+        
+        /*Modular Mobile Menu Import from build103 */
+        /*AHOY MOBILE TICKER STYLE */
+        
+        @media only screen and (max-width: 755px) {
+            .MOBILEmenuMENU {display:block;}
+        }
+        
+        
+        
+        
+        .newTonight {
+            background-color: rgba(255, 255, 255, 0);
+            border-style: solid;
+            border-width: 1px;
+            border-color: #ffffff15;
+            color:rgba(255, 255, 255, 0.229);
+            padding:7.5px;
+        }
+        
+        .newTonight:hover {
+            background-color: rgba(255, 255, 255, 0);
+            border-style: solid;
+            border-width: 1px;
+            border-color: #2424244e;
+            color:rgba(255, 255, 255, 0.748);
+            padding:7.5px;
+        }
+        
+        button:hover {
+            background-color:#4f4f4f;
+            color:white;
+            font-size:12px;
+            font-family:rubik;
+            text-decoration: none;
+            text-transform: uppercase;
+            height:30px;
+            border: none;
+            cursor:pointer;
+        
+        }
+        
+        .activeButton {
+            background-color:#23c8ff4b;
+            color:white;
+            font-size:12px;
+            font-family:rubik;
+            text-decoration: none;
+            text-transform: uppercase;
+            height:30px;
+            border: none;
+            cursor:pointer;
+            border:1px;
+            border-color: wheat;
+        
+        }
+        
+        
+            
+        /* @media (min-width: 500px) and (orientation: landscape) {
+            /* Your style goes here 
+            .MOBILEmenuMENU{display:none;}
+            .MOBILEannouncement{display: none;}
+            } */
+        @media only screen and (max-width: 600px) {
+            .ahoy_ticker { display:none; }
+            .ahoyTickerCol { display:none;}
+            .ahoyTickerColMIDDLE {display:none;}
+            .ahoyTickerColTIME {display:none;}
+        
+        
+            #ahoyMobileTicker {
+                display: block;
+            }
+        
+        }
+        
+        
+        @media only screen and (max-width: 600px) {
+        html {
+            position: relative;
+            min-width: auto;
+            min-height: auto;
+        
+        }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .innerBox {
+                min-width: 100%;
+            }
+        
+            .outerBox {
+                margin:18px;
+            }
+        
+        }
+        
+        @media only screen and (max-width: 600px) {
+        body { 
+          /*  background-image: url('https://bestanimations.com/media/water/185829572dark-wave-water-ocean-gif.gif');
+            background-size: stretch;
+            background-blend-mode:darken; */
+            background-color: #0a0027;
+            background-position: 95% -20%;
+            padding:15px;
+                
+               }
+        
+            }
+        
+        
+        /*MOBILE VIDOE @iphone 8 */
+        
+            @media only screen and (max-width: 755px) {
+            .wrapper {
+                position: relative;
+            padding-bottom: 50.25%; /* 16:9 */
+            padding-top: 25px;
+            border: white;
+            }
+            }
+            @media only screen and (max-width: 755px) {
+            .wrapper iframe {
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                border-width: 0px;
+                padding:0px;
+                position:relative;
+                }
+                    }
+        
+        /*MOBILE VIDOE @iphone SE */
+        
+        @media only screen and (max-width: 340px) {
+            .wrapper {
+                position: relative;
+            padding-bottom: 48.25%; /* 16:9 */
+            padding-top: 25px;
+            border: white;
+            }
+            }
+            @media only screen and (max-width: 340px) {
+            .wrapper iframe {
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                border-width: 0px;
+                padding:0px;
+                position:relative;
+                }
+                    }
+        
+                    /*mobile spacer*/
+        @media only screen and (max-width: 755px) {
+        .spacer {
+            min-height:300px;
+            padding:200px;
+        }
+        
+        }
+        
+        /*MOBILE ANNOUNCEMENT */
+        
+        
+            @media only screen and (max-width: 755px) {
+        
+        
+        .MOBILEannouncement {
+            display: block;
+            padding:22px;
+            text-align:center;
+            background-color: #f8000c10;
+            margin:18px;
+            font-family: rubik;
+            font-size:14px;
+            border-style:solid;
+            border-color:rgb(255, 255, 255);
+            border-width:1px;
+            
+        
+        
+        
+        }
+        
+            }
+        
+            @media only screen and (max-width: 801px) {
+        .watchMenuRight {
+            font-size: 8px;
+            
+        }
+        #ahoyPushTitle {display:none;}
+        #ahoyPushTime {display:none;}
+        #span {display:none;}
+        
+            }
+        
+            @media only screen and (max-width: 900px) { 
+                .playBlockDisplayDiv {display:none;}
+            }
+        
+        /*AG NEW STYLES */
+        .ahoy_ticker {
+            background-color:rgba(20, 0, 0, 0.708);
+            padding:2.5px;
+        }
+        
+        .ahoy_ticker:hover {
+            background-color:rgba(36, 0, 24, 0.708);
+            padding:2.5px;
+        }
+        
+        img:hover {
+          box-shadow: 0 0 2px 1px rgba(255, 0, 119, 0.5);
+        }
+        
+        .MOBILEannouncement {
+            border-color: rgba(255, 0, 0, 0.294);
+            font-size:12px;
+        
+        }
+        
+        .MOBILEannouncement:hover {
+            border-color: rgba(255, 0, 0, 0.294);
+            background-color:rgba(255, 0, 21, 0.407);
+            font-size:12px;
+        
+        }
+        
+        /* END OF AG NEW STYLES */
+        
+        .scheduleSpecialText {
+            color:white;
+            font-size:12px;
+            text-align:center;
+            font-family:rubik;
+            text-transform: uppercase;
+            padding:20px;
+        }
+        
