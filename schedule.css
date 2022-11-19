@@ -1,4 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+
+
 h1 {
     font-size:24px;
     font-weight: 900;
@@ -14,10 +19,10 @@ td {
 
 .outerWrapperMain {
     background: rgba(4, 0, 255, 0.091)!important;
-    height: 90%;
-    width: 95%;
+    height: 100vh;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
   
     overflow: auto;
     position: relative;
@@ -25,7 +30,7 @@ td {
 
   @media only screen and (max-width: 600px) {
     body {
-        background-color: rgba(255, 0, 0, 0)!important;
+        background-color: rgb(0, 0, 0)!important;
     }
 
     table
@@ -56,6 +61,9 @@ td {
     text-align:center;
     padding-bottom:15px;
     background-color:#000000;
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
     
     }
     }
@@ -101,21 +109,14 @@ td {
         text-transform: uppercase;
         height:30px;
         background: transparent;
-        border: none;
+        border-style:solid;
+        border-color:rgba(0, 0, 0, 0);
         cursor:pointer;
+
     
     }
     
 
-    /* Mobile Spacer */
-    @media only screen and (max-width: 600px) {
-
-        .mobileSpacer {
-            width:100%;
-            height:300px;
-            background-color:rgba(255, 255, 255, 0);
-        }
-    }
 
     /*Mobile Spacer OFF on Desktop */
 
@@ -193,7 +194,7 @@ td {
         overflow: auto;
         text-align:center;
 
-        padding-bottom:20px;
+        /*padding-bottom:20px;*/
         
       }
 
@@ -202,15 +203,15 @@ td {
         .innerYoDiv {
             background: rgba(0, 0, 0, 0.488);
             background-blend-mode: exclusion;
-            border: 3px;
+            border: .5px;
             border-style:solid;
-            border-color: rgba(0, 251, 255, 0.645);
+            border-color: rgb(0, 251, 255);
             color: white;
-            width: 90%;
+            width: 95%;
             height: 85%;
             transform: translate(-50%, -50%);
             position: absolute;
-            top: 44%;
+            top: 45%;
             left: 50%;
           
             overflow: auto;
@@ -227,7 +228,7 @@ td {
         .MOBILEmenuMENU{display: none;}
         
         html {
-            height:95%;
+            height:100%;
         }
         
               body {
@@ -352,7 +353,7 @@ td {
           border-radius: 3px;
           color: #666;
           display: block;
-          font-size: 13px;
+          font-size: 14px;
           line-height: 1.25;
           max-width: 100%;
           padding: 6px 12px;
@@ -431,13 +432,13 @@ td {
           /*top: auto; */
           right: 1%;
           /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-          bottom: 1.5%;
+          bottom: 1.25%;
           width: 98%;
           height: 90px;
             /* OVERFLOW SETTINGS */
         overflow:none;
           overflow-y: hidden;
-          background-color: #0000004b;
+          background-color: #000000d2;
           outline-color: #FFFFBC;
           outline-offset: 0px;
           outline-style: solid;
@@ -484,7 +485,7 @@ td {
                     background-color: #0b030c97;
                   float: left;
                   min-height: 100%;
-                  width: 31%;
+                  width: 34%;
                   padding-top: 5px;
                   padding-bottom: 20px;
                   font-family: "rubik";
@@ -586,9 +587,9 @@ td {
         
         
           body {
-        
-            background-size: cover;
-            background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+            background-size:stretch;
+            background-position:30px;
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fmakeagif.com%2Fgif%2Fjellyfish-5OsX0J&psig=AOvVaw2oh63pW3j8zsmW_ViZ3BP1&ust=1666999094786000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIC6ztjFgfsCFQAAAAAdAAAAABAM');
           }
         
         
@@ -611,7 +612,7 @@ td {
             background: #05c4dd03;
             box-shadow: 0px 0px 6px 0px #e72eff;
             border-radius: 10px;
-            padding: 30px;
+            padding: 25px;
             font-size: 20px;
             text-align: center;
         
@@ -662,15 +663,16 @@ td {
         }
         
         button:hover {
-            background-color:#4f4f4f;
+            background-color:#03004281;
             color:white;
             font-size:12px;
             font-family:rubik;
             text-decoration: none;
             text-transform: uppercase;
             height:30px;
-            border: none;
+            border-style: solid;
             cursor:pointer;
+            border-color:white;
         
         }
         
@@ -724,9 +726,7 @@ td {
                 min-width: 100%;
             }
         
-            .outerBox {
-                margin:18px;
-            }
+            
         
         }
         
@@ -737,67 +737,15 @@ td {
             background-blend-mode:darken; */
             background-color: #0a0027;
             background-position: 95% -20%;
-            padding:15px;
+            
                 
                }
         
             }
         
         
-        /*MOBILE VIDOE @iphone 8 */
-        
-            @media only screen and (max-width: 755px) {
-            .wrapper {
-                position: relative;
-            padding-bottom: 50.25%; /* 16:9 */
-            padding-top: 25px;
-            border: white;
-            }
-            }
-            @media only screen and (max-width: 755px) {
-            .wrapper iframe {
-                top: 0;
-                left: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                border-width: 0px;
-                padding:0px;
-                position:relative;
-                }
-                    }
-        
-        /*MOBILE VIDOE @iphone SE */
-        
-        @media only screen and (max-width: 340px) {
-            .wrapper {
-                position: relative;
-            padding-bottom: 48.25%; /* 16:9 */
-            padding-top: 25px;
-            border: white;
-            }
-            }
-            @media only screen and (max-width: 340px) {
-            .wrapper iframe {
-                top: 0;
-                left: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                border-width: 0px;
-                padding:0px;
-                position:relative;
-                }
-                    }
-        
-                    /*mobile spacer*/
-        @media only screen and (max-width: 755px) {
-        .spacer {
-            min-height:300px;
-            padding:200px;
-        }
-        
-        }
+
+
         
         /*MOBILE ANNOUNCEMENT */
         
@@ -805,24 +753,7 @@ td {
             @media only screen and (max-width: 755px) {
         
         
-        .MOBILEannouncement {
-            display: block;
-            padding:22px;
-            text-align:center;
-            background-color: #f8000c10;
-            margin:18px;
-            font-family: rubik;
-            font-size:14px;
-            border-style:solid;
-            border-color:rgb(255, 255, 255);
-            border-width:1px;
-            
         
-        
-        
-        }
-        
-            }
         
             @media only screen and (max-width: 801px) {
         .watchMenuRight {
@@ -850,22 +781,9 @@ td {
             padding:2.5px;
         }
         
-        img:hover {
-          box-shadow: 0 0 2px 1px rgba(255, 0, 119, 0.5);
-        }
+       
         
-        .MOBILEannouncement {
-            border-color: rgba(255, 0, 0, 0.294);
-            font-size:12px;
-        
-        }
-        
-        .MOBILEannouncement:hover {
-            border-color: rgba(255, 0, 0, 0.294);
-            background-color:rgba(255, 0, 21, 0.407);
-            font-size:12px;
-        
-        }
+
         
         /* END OF AG NEW STYLES */
         
@@ -875,6 +793,77 @@ td {
             text-align:center;
             font-family:rubik;
             text-transform: uppercase;
-            padding:20px;
+            padding:15px;
         }
         
+
+        .iconMobileMenu {
+          width:50px;
+          height:auto;
+          opacity:0.72;
+          border-style:solid;
+          border-width:1px;
+          border-color:rgba(0, 247, 255, 0);
+
+          
+      }
+      
+      .iconMobileMenu:hover {
+          width:50px;
+          height:auto;
+          border-style:solid;
+          border-width:1px;
+          border-color:rgba(0, 247, 255, 0.789);
+          opacity: 1;
+      }
+      
+
+      @media only screen and (max-width: 900px)
+      {
+        .whiteSpace {
+          height:200px;
+        }
+      
+      }}
+
+      .whiteSpace {
+        height:0px;
+      }
+
+
+/*CSS TO CLEAN UP 
+      .MOBILEannouncement {
+            display: block;
+            padding:22px;
+            text-align:center;
+            background-color: #f8000c10;
+            margin:18px;
+            font-family: rubik;
+            font-size:14px;
+            border-style:solid;
+            border-color:rgb(255, 255, 255);
+            border-width:1px;
+            
+        
+        
+        
+        }
+        
+            }
+
+            */
+
+
+/* CSS CLEAN UP - 
+
+    /* Mobile Spacer 
+    @media only screen and (max-width: 600px) {
+
+      .mobileSpacer {
+          width:100%;
+          height:200px;
+          background-color:rgba(255, 255, 255, 0);
+      }
+  }
+
+  */
