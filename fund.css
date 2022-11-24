@@ -1,0 +1,202 @@
+body {
+    background-color:rgb(255, 21, 103);
+    font-family: 'Muli', sans-serif;
+ 
+    
+}
+
+p{
+    text-transform:uppercase;
+    font-family: 'Cubano', sans-serif;
+    font-weight:900;
+}
+
+.mainContainer {
+width:100%;
+height:70%;
+display:flex;
+}
+
+
+.container {
+font-family: arial;
+font-size: 16px;
+margin: auto;
+width: 920px;
+height: auto;
+outline: dashed 1px rgba(0, 0, 0, 0);
+/* Center vertically and horizontally */
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.child {
+width: 100%;
+height: 100%;
+background-color: rgba(255, 0, 0, 0);
+text-align:center;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.fundButton {
+background-color:white;
+background-image:"button_Fund.png"; 
+width:390px;
+height:70px;
+outline: solid 1px rgb(0, 0, 0);
+text-transform: uppercase;
+font-size:22px;
+}
+
+.fundButton:hover {
+    background-color:rgb(255, 21, 103);
+    background-image:"button_Fund.png"; 
+    width:390px;
+    height:70px;
+    outline: solid 1px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size:22px;
+    color:white;
+    }
+
+.imageLogo {
+width:100%;
+height:auto;
+
+
+
+}
+
+.fundRow {
+background-color:white;
+width:350px;
+height:auto;
+text-align:center;
+flex-wrap:wrap;
+}
+
+.iconMobileMenu {
+display:none;
+}
+
+/*MOBILE CSS */
+@media only screen and (max-width: 600px) { 
+
+.iconMobileMenu {display:block;}
+
+.iconMobileMenu {
+  width:50px;
+  height:auto;
+  opacity:1;
+  border-style:solid;
+  border-width:1px;
+  border-color:rgba(0, 247, 255, 0);
+  text-align:center;
+
+  
+}
+
+.iconMobileMenu:hover {
+  width:50px;
+  height:auto;
+  border-style:solid;
+  border-width:1px;
+  border-color:rgba(255, 0, 157, 0.789);
+  opacity: 1;
+}
+
+}
+
+
+.MOBILEmenuMENU {
+width:100%;
+background-color:rgba(255, 0, 0, 0);
+justify-content: center;
+align-items: center;
+display:flex;
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+body {
+
+background-image: url('https://64.media.tumblr.com/f8332d1ad357e93c43d55866c6accc2e/396745c6cdf1e3fa-a0/s500x750/d51ced33a7d23de25d8925173167d6b411b4d2d8.gif');
+background-blend-mode: lighten;
+background-color:rgb(0, 0, 0);
+}
+
+.mainContainer {
+width:100%;
+height:70%;
+display:flex;
+}
+
+.container {
+font-family: arial;
+font-size: 16px;
+margin: auto;
+width: 100%;
+height: auto;
+outline: dashed 1px rgba(0, 0, 0, 0);
+/* Center vertically and horizontally */
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+padding:20px;
+
+}
+
+.child {
+width: 100%;
+height: 100%;
+background-color: rgba(255, 0, 0, 0);
+text-align:center;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.imageLogo {
+width:100%;
+height:auto;
+
+
+
+}
+
+.fundButton {
+background-color:white;
+background-image:"button_Fund.png"; 
+width:90%;
+height:70px;
+outline: solid 1px rgb(0, 0, 0);
+text-transform: uppercase;
+font-size:22px;
+margin:10px;
+}
+
+.fundButton:hover {
+    background-color:rgb(255, 0, 128);
+    background-image:"button_Fund.png"; 
+    width:90%;
+    height:70px;
+    outline: solid 1px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size:22px;
+    margin:10px;
+    }
+
+}
