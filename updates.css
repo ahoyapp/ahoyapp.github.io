@@ -1,0 +1,175 @@
+
+body {
+    font-family: 'Rubik', sans-serif; 
+    background-color:rgb(255, 236, 215);
+    margin:0;
+}
+
+            td {
+                padding:10px;
+                
+                
+            }
+
+            .theader {
+                background-color:black;
+                color:white;
+                font-size:16px;
+                text-align:left;
+                max-width:100%;
+                position:sticky;
+
+            }
+
+            .td1 {
+                text-transform:uppercase;
+                font-weight:900;
+                border-style:solid;
+                max-width:33%;
+                font-size:16px;
+                background-color:rgba(172, 255, 47, 0);
+                width:300px;
+                text-align:left;
+            }
+
+            .td2 {
+                font-size:16px;
+                font-weight:600;
+                border-style:solid;
+                text-transform:uppercase;
+                background-color:rgba(0, 128, 0, 0);
+                min-width:300px;
+                max-width:50%;
+                
+            }
+
+            .td3 {
+                font-size:16px;
+                font-weight:300;
+                border-style:solid;
+                text-transform:uppercase;
+                background-color:rgba(0, 128, 0, 0);
+                width:100px;
+                text-align:center;
+            }
+
+            .td4 {
+                max-width:25%;
+                text-align:left;
+                border-style:solid;
+            }
+
+
+            /*TABLE HOVER STATES */
+            .td1:hover {
+              
+              background-color:rgba(21, 21, 21, 0.14);
+          }
+            
+            .td2:hover {
+               
+                background-color:rgba(21, 21, 21, 0.14);
+            }
+
+            .td3:hover {
+                cursor: pointer;
+              background-color:rgb(208, 255, 0);
+          }
+
+          /*TR Business */
+            tr {
+                height:40px;
+                border-style: solid!important;
+                border-width: 1px;
+                border-color:black;
+            }
+
+            
+
+.mainMarketWrap {
+    width:90%;
+    height:50vh;
+    display:flex;
+    background-color:rgba(128, 0, 128, 0);
+    padding:10px;
+    padding-top:35px;
+    align-items: center;
+    justify-content: center;
+    border-style:solid;
+    overflow:scroll;
+}
+
+.mainMarketChildWrap {
+    /* width:920px;
+    max-width:1200px; */
+    min-height:200px;
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0);
+    border-style:solid;
+    border-width:1.5px;
+    overflow: scroll;
+
+
+}
+
+.topNavMain {
+    width:100%;
+    height:50px;
+    border-style:solid;
+
+
+}
+
+.buttonTopNav {
+    background-color:rgba(255, 255, 255, 0);
+    border-style:solid;
+    border-color:rgba(0, 0, 0, 0.646);
+    text-transform:uppercase;
+    font-family: 'Rubik', sans-serif; 
+    font-weight:600;
+    padding:10px;
+
+}
+
+.buttonTopNav:hover{
+    background-color: rgba(119, 119, 119, 0.426);
+    cursor: pointer;
+}
+
+.topNavMenu {
+    
+    width:53%;
+    height:100px;
+    align-items: right;
+
+}
+
+.sectionDisplay {
+    width:100%;
+    height:75px;
+    text-align:center;
+    border-style:solid;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-size:32px;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+.mainSplash {
+    width:100%;
+    height:40vh;
+    border-style:solid;
+    border-color:rgba(255, 255, 255, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+
+}
+
+.mainSplash
