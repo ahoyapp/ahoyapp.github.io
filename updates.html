@@ -5,23 +5,32 @@
         <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800;900&display=swap'); </style>
         <link rel="stylesheet" href="updates.css">
         <title> Ahoy Indie Media | Updates </title>
-
     </head>
 
     <body>
+<header>
+    <div class="row">
+        <div class="logo-row">
+            <a href="https://ahoy.ooo"><img src="/ahoy.png" class="header-logo"></a>
+        </div>
+        <p class="header-text">
+           :: All the happenings, all the time :: content updates, new features, and product roadmaps.</p>
+    </div>
+</header>
 
-
+<!-- SUPER WRAPPER -->
 <div class="superWrap-3col">
-
 <!-- CONTENT -->
 <div class="wrapSection-Updates-Roadmaps">
+    <p class="tableHeaderText"> Recently added Media to our library</p>
 <section class="section-Content">
     <!-- CONTENT 1 -->
-    <p class="tableHeaderText">Recent Content to the Little Library that Could</p>
-<table>
+
+    <!--TABLE 1 = Table - New Content -->
+<table class="table-content">
     <tr>
-        <th>Date Added On</th>
-        <th>Type of Media</th>
+        <th>Date Added</th>
+        <th>Type</th>
         <th>Artist Name</th>
         <th>Media Title</th>
         <th>Added to</th>
@@ -51,6 +60,7 @@
         <td class="td-col-3-content" ><a href="radio.ahoy.ooo">The Radio</a></td>
        
     </tr>
+    
    
    
     
@@ -59,17 +69,25 @@
 </section>
 <!-- CONTENT ON THE HORIZON -->
 <section>
-    <div class="tableIntro">
-   <p class="tableHeaderText"> New Content on the Way</p>
-</div>
+    
+   <p class="tableHeaderText"> Upcoming Content on the Way</p>
+
     <table>
-        <tr>
-            <td class="td-col-2">Rob Show Episode #10 - Sam Carlson </td>
-            <td class="td-col-1">Jan 3rd</td>
-        </tr>
+       <tr>
+        <th>Content</th>
+        <th>Release Date</th>
+       </tr>
         <tr>
             <td class="td-col-2">Youth XL on the Radio </td>
             <td class="td-col-1">Jan 4rd</td>
+        </tr>
+        <tr>
+            <td class="td-col-2">The Tines New Album </td>
+            <td class="td-col-1">Jan 5th</td>
+        </tr>
+        <tr>
+            <td class="td-col-2">The Rob Show Episode #10 - Sam Carlson </td>
+            <td class="td-col-1">Jan 5th</td>
         </tr>
     </table>
 </section>
@@ -83,26 +101,55 @@
         <tr>
             <td class="td-col-1">Build 1.014.3</td>
             <td class="td-col-2">
-                Built the basic structure of the updates section - spent a good amount of time going back and forth with the style - trying to keep it simple - trim that fat 
+                Built the basic structure of the updates section - spent a good amount of time going back and forth with the style - trying to keep it simple - trim that fat - make it responsive - you know the deal. 
             </td>
         </tr>
     </table>
 </section>
 <section class="section-Roadmaps">
-    <p class="tableHeaderText">  Features we are presently working on </p>
+    <p class="tableHeaderText"> Product Roadmaps : aka : Features we are presently working on </p>
     <table>
         <tr>
             <td class="td-col-1">Watch Roadmaps</td>
-            <td class="td-col-2">Fix the dang fullscreen button on mobile - make it so when folks hit the screen button - it goes full screen </td>
-            
+            <td class="td-col-3">
+                <ul>
+                    <li>
+                        Fix the dang "fullscreen button" on mobile - make it so when folks hit the "fullscreen button" - it wipes clean all existing UI 
+                    </li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td class="td-col-1">Radio Roadmaps</td>
-            <td>Fix the dang fullscreen button</td>
+            <td class="td-col-3">
+                <ul>
+                    <li>Fix the dang fullscreen button on mobile</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td class="td-col-1">Market Roadmaps</td>
-            <td>Build a basic onDemand - Market Ahoy</td>
+            <td class="td-col-3">
+                <ul>
+                    <li>
+                        Build basic marketplace whose proceeds will directly go to the corresponding artist
+                    </li>
+                </ul>
+              </td>
+        
+        </tr>
+        <tr>
+            <td class="td-col-1">Global Roadmaps</td>
+            <td class="td-col-3">
+                <ul>
+                    <li>
+                        Organize the source code a bit better - properly sync with github
+                    </li>
+                    <li>
+                        Get Ahoy on Apple Carplay + Android Auto
+                    </li>
+                </ul>
+              </td>
         
         </tr>
     </table>
@@ -132,12 +179,6 @@
 <!-- Pontential Middle Content Goes here -->
 
 
-<!--  
-<div id="newTonight" class="newTonight">
-    <p id="superAnnounceDesktop" style="color:wheat; text-transform: uppercase; font-size: 12px;"> New Content | Thursday's 7PM EST </p>
-
-    </div>
--->   
 
 <!-- Pontential Middle Content Goes here -->
 
