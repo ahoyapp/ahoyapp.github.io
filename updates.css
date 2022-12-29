@@ -388,10 +388,12 @@ button:hover {
         background-color:white;
         border-style:solid;
         border-width:thin;
+        text-align:center;
     }
     
     .td-col-2 {
-        min-width:140%;
+        min-width:500px;
+        width:100%;
         border-style:solid;
         border-width:thin;
     }
@@ -440,12 +442,15 @@ button:hover {
     border-style:solid;
     border-width:thin;
     align-items: top;
+    min-width:150px;
 }
 
 .td-col-2 {
     background-color:rgb(228, 228, 228);
     border-style:solid;
     border-width:thin;
+    width:100%;
+    min-width:900px;
     max-width:1152px;
 }
 
@@ -453,12 +458,16 @@ button:hover {
     border-style:solid;
     border-width:thin;
     font-size:14px;
+    width:100%;
+    min-width:900px;
+    max-width:1152px;
 }
 
 ul {
     list-style: square;
     padding:0px;
     padding-left:20px;
+    list-style-type: circle;
 }
 
 
