@@ -2,13 +2,25 @@
 body {
     font-family: 'Rubik', sans-serif; 
     background-color:rgb(255, 236, 215);
-    margin:0;
+    font-size:12px;
+    margin:0px;
+    padding:20px;
 }
 
+
+/* TABLE TABLE TABLE */
+
             td {
-                padding:10px;
+                padding:5px;
+                border-width:thin;
                 
                 
+            }
+
+            th {
+                font-size:16px;
+                font-weight:400;
+                text-align:left;
             }
 
             .theader {
@@ -17,29 +29,28 @@ body {
                 font-size:16px;
                 text-align:left;
                 max-width:100%;
-                position:sticky;
 
             }
 
             .td1 {
                 text-transform:uppercase;
-                font-weight:900;
+                font-weight:600;
                 border-style:solid;
-                max-width:33%;
+                border-width:thin;
                 font-size:16px;
-                background-color:rgba(172, 255, 47, 0);
-                width:300px;
+                background-color:rgba(255, 0, 230, 0.68);
+                /*width:300px;*/
                 text-align:left;
             }
 
             .td2 {
                 font-size:16px;
-                font-weight:600;
+                font-weight:500;
                 border-style:solid;
+                border-width:thin;
                 text-transform:uppercase;
-                background-color:rgba(0, 128, 0, 0);
-                min-width:300px;
-                max-width:50%;
+                background-color:rgb(0, 255, 0);
+                max-width:600px;
                 
             }
 
@@ -47,16 +58,18 @@ body {
                 font-size:16px;
                 font-weight:300;
                 border-style:solid;
+                border-width:thin;
                 text-transform:uppercase;
-                background-color:rgba(0, 128, 0, 0);
-                width:100px;
+                background-color:rgba(37, 255, 37, 0.841);
+                min-width:100%;
                 text-align:center;
             }
 
             .td4 {
-                max-width:25%;
+                min-width:25%;
                 text-align:left;
                 border-style:solid;
+                border-width:thin;
             }
 
 
@@ -80,96 +93,444 @@ body {
             tr {
                 height:40px;
                 border-style: solid!important;
-                border-width: 1px;
+                border-width: thin;
                 border-color:black;
             }
 
             
+/*Table individual Items */
 
-.mainMarketWrap {
-    width:90%;
-    height:50vh;
+.table-content {
+    background-color:rgba(0, 140, 255, 0);
+    min-width:100%;
+}
+
+.table-webUpdates {
+    background-color:rgb(0, 195, 255);
+    border-width:thin;
+}
+
+.table-roadMaps {
+    background-color:rgb(0, 255, 170);
+}
+
+/*Ssection Wrappers*/ 
+/*main Wraps newContent - LEFT */
+
+.sectionDisplay-newContent {
+    margin-top: 5px;
+    width:100%;
+    height:20px;
+    border-style:solid;
+    border-width:thin;
     display:flex;
-    background-color:rgba(128, 0, 128, 0);
-    padding:10px;
-    padding-top:35px;
     align-items: center;
-    justify-content: center;
-    border-style:solid;
-    overflow:scroll;
+    padding:5px;
 }
 
-.mainMarketChildWrap {
-    /* width:920px;
-    max-width:1200px; */
-    min-height:200px;
-    justify-content: center;
-    background-color:rgba(255, 0, 0, 0);
-    border-style:solid;
-    border-width:1.5px;
-    overflow: scroll;
-
-
-}
-
-.topNavMain {
+.mainSplash-newContent {
     width:100%;
-    height:50px;
-    border-style:solid;
-
-
-}
-
-.buttonTopNav {
-    background-color:rgba(255, 255, 255, 0);
-    border-style:solid;
-    border-color:rgba(0, 0, 0, 0.646);
-    text-transform:uppercase;
-    font-family: 'Rubik', sans-serif; 
-    font-weight:600;
-    padding:10px;
-
-}
-
-.buttonTopNav:hover{
-    background-color: rgba(119, 119, 119, 0.426);
-    cursor: pointer;
-}
-
-.topNavMenu {
-    
-    width:53%;
-    height:100px;
-    align-items: right;
-
-}
-
-.sectionDisplay {
-    width:100%;
-    height:75px;
-    text-align:center;
-    border-style:solid;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionTitle {
-    font-size:32px;
-    font-weight:400;
-    text-transform: uppercase;
-}
-
-.mainSplash {
-    width:100%;
-    height:40vh;
+    height:auto;
+    min-height:500px;
+    max-height:500px;
     border-style:solid;
     border-color:rgba(255, 255, 255, 0);
     display:flex;
     justify-content: center;
     align-items: center;
     text-align:center;
+    background-color:pink;
 
 }
 
-.mainSplash
+.mainMarketWrap-newContent {
+    /*max-width:930px; */
+    height:auto;
+    display:flex;
+    background-color:rgb(255, 46, 46);
+    padding:5px;
+    align-items: center;
+    justify-content: center;
+    border-style:solid;
+    border-width:thin;
+    overflow:scroll;
+}
+
+.mainMarketChildWrap-newContent {
+    /* width:920px;
+    max-width:1200px; */
+    min-height:200px;
+    max-height:400px;
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0);
+    border-style:solid;
+    border-width:thin;
+    overflow: scroll;
+}
+
+
+
+/* Bottom */
+/* WEB UPDATES STYLES */
+/* WRAPS WRAPS WRAPS */
+
+.mainSplash-webUpdates {
+    display:flex;
+    width:100%;
+    background-color:rgba(128, 0, 128, 0);
+    justify-content: center;
+    align-items: top;
+    text-align:center;
+}
+
+/*End of all that left and right businesss */
+
+.updatesSection-left {
+    max-width:100%;
+    padding-top:5px;
+    }
+    
+.updatesSection-right {
+        max-width:100%;
+        padding-top:5px;
+    }
+
+
+
+/*left - Web Updates */
+
+.mainMarketWrap-webUpdates {
+    
+    width:100%;
+    height:50%;
+    max-height:250px;
+    /* display:flex; */
+    background-color:rgb(128, 0, 128);
+    padding:1px;
+    border-style:solid;
+    border-width:thin;
+    overflow:scroll;
+}
+
+.mainMarketChildWrap-webUpdates {
+    /* width:920px;
+    max-width:1200px; */
+    /*min-height:200px; */
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0);
+    border-style:solid;
+    border-width:thin;
+    overflow: scroll;
+
+
+}
+
+/*right - Road Maps */
+
+.mainMarketWrap-roadMaps {
+    width:100%;
+    height:50%;
+    max-height:250px;
+    /* display:flex; */
+    background-color:rgba(128, 0, 128, 0);
+    padding:1px;
+    border-style:solid;
+    border-width:thin;
+    overflow:scroll;
+}
+
+.mainMarketChildWrap-roadMaps {
+    /* width:920px;
+    max-width:1200px; */
+    /*min-height:200px; */
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0);
+    border-style:solid;
+    border-width:thin;
+    overflow: scroll;
+
+
+}
+
+
+
+/*RIGHT RIGHT TIGHT */
+
+/* AHOY TICKER STYLE  */
+
+
+.ahoy_ticker {
+    position: fixed;
+
+  left: 1%;
+  /*top: auto; */
+  right: 1%;
+  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+  bottom: 1.5%;
+  width: 98%;
+  height: 90px;
+    /* OVERFLOW SETTINGS */
+overflow:none;
+  overflow-y: hidden;
+  background-color: #000000;
+  outline-color: #FFFFBC;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 1px;
+  vertical-align: auto;
+
+}
+ /* Create three equal columns that floats next to each other */
+ .ahoyTickerCol {
+          float: left;
+          width: 25%;
+             min-height:100%;
+          padding: 5px;
+          background-color: #0b030c97;
+          max-width: 25%;
+
+
+        }
+        .ahoyTickerCol:hover {
+          float: left;
+          width: 25%;
+         min-height:100%;
+          padding: 5px;
+          background-color: #0b030c97;
+          max-width: 25%;
+
+        }
+
+        .ahoyTickerColMIDDLE {
+          float: left;
+          width: 40%;
+          min-height: 100%;
+          padding: 10px;
+          font-family: "Rubik";
+          text-align:center;
+          background-color: #0b030c97; 
+
+
+        }
+
+       
+    
+        .ahoyTickerColTIME {
+            background-color: #0b030c97;
+          float: left;
+          min-height: 100%;
+          width: 31%;
+          padding-top: 5px;
+          padding-bottom: 20px;
+          font-family: "rubik";
+          text-align: right;
+          left: 50%;
+            top: 50%;
+
+
+        }
+
+        .ahoyTickerColWrap
+        {
+            width: 100%;
+            align-items: top;
+            text-align:center;
+         }
+
+        .ayeTitle {
+            font-weight:500;
+            font-size:14px;
+        }
+
+.imgAhoyLogo {
+  border: 11px solid rgba(221, 221, 221, 0.016);
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 10px;
+  width: 100px;
+  height:auto;
+  float:left;
+
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+  /* END OF AHOY TICKER STYLE  */
+
+/*Buttons IMPORTED from Watch2.css */
+button{
+    background-color:#cecece;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+
+}
+
+button:hover {
+    background-color:#ff4797;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+
+}
+
+.activeButton {
+    background-color:#ff4797;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+    border:1px;
+    border-color: wheat;
+
+}
+
+
+.superWrap-3col {
+    display:flex;
+    width:100%;
+    padding:0px;
+    height:95vh;
+    justify-content: center;
+    align-items:top;
+
+}
+
+@media only screen and (max-width: 1201px) {
+    .superWrap-3col {
+        display:block;
+        padding:0px;
+        max-width:95%;
+    }
+
+
+    .td-col-1 {
+        min-width:10%;
+        background-color:white;
+        border-style:solid;
+        border-width:thin;
+    }
+    
+    .td-col-2 {
+        min-width:140%;
+        background-color:rgb(228, 228, 228);
+        border-style:solid;
+        border-width:thin;
+    }
+
+}
+
+@media only screen and (max-width: 601px) {
+    .superWrap-3col {
+        display:block;
+        padding:0px;
+        max-width:95%;
+    }
+
+
+    
+}
+
+
+.section-Content {
+    background-color:white;
+    border-style:solid;
+    border-width:thin;
+    max-height:100%;
+    min-width:700px;
+}
+
+.section-Updates {
+    background-color:rgb(200, 200, 200);
+    border-style:solid;
+    border-width:thin;
+    max-height:100%;
+}
+
+.section-Roadmaps {
+    background-color:rgb(255, 159, 159);
+    border-style:solid;
+    border-width:thin;
+    max-height:100%;
+}
+
+.wrapSection-Updates-Roadmaps {
+    padding:20px;
+    min-width:500px;
+    width:100%;
+}
+
+/*NEW TD TD TD TD TD */
+
+.td-col-1 {
+    width:100px;
+    background-color:white;
+    border-style:solid;
+    border-width:thin;
+}
+
+.td-col-2 {
+    width:600px;
+    background-color:rgb(228, 228, 228);
+    border-style:solid;
+    border-width:thin;
+}
+
+
+/*COntent TDs*/
+
+.td-col-1-content {
+    border-style:solid;
+    border-width:thin;
+    text-align:center;
+    width:7.5%;
+}
+
+.td-col-2-content {
+    border-style:solid;
+    border-width:thin;
+    text-align:left;
+    width:30%;
+}
+
+.td-col-3-content {
+    border-style:solid;
+    border-width:thin;
+    text-align:left;
+    width:10%;
+    text-decoration: none;
+}
+
+/* Table Intros */
+
+.tableIntros {
+    width:100%;
+    height:50px;
+    border-style:solid;
+    border-width:thin;
+
+}
+
+.tableHeaderText {
+    font-weight:600;
+    font-size:16px;
+    text-transform: uppercase;
+    padding-left:1.5px;
+}
