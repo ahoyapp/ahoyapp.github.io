@@ -3,8 +3,29 @@ body {
     font-family: 'Rubik', sans-serif; 
     background-color:rgb(255, 236, 215);
     font-size:12px;
-    margin:0px;
+    margin:0 auto;
+    width:90%;
     padding:20px;
+    
+}
+
+/*header business */
+
+header {
+    background-color:black;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.logo-row {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 320px;
+    height: auto;
+    text-align: center;
 }
 
 
@@ -18,80 +39,24 @@ body {
             }
 
             th {
-                font-size:16px;
+                font-size:12px;
                 font-weight:400;
                 text-align:left;
-            }
-
-            .theader {
                 background-color:black;
                 color:white;
-                font-size:16px;
-                text-align:left;
-                max-width:100%;
-
-            }
-
-            .td1 {
-                text-transform:uppercase;
-                font-weight:600;
-                border-style:solid;
                 border-width:thin;
-                font-size:16px;
-                background-color:rgba(255, 0, 230, 0.68);
-                /*width:300px;*/
-                text-align:left;
+                padding-left:5.5px;
+                border-color:white;
+                padding-right:5.5px;
+
             }
 
-            .td2 {
-                font-size:16px;
-                font-weight:500;
-                border-style:solid;
-                border-width:thin;
-                text-transform:uppercase;
-                background-color:rgb(0, 255, 0);
-                max-width:600px;
-                
-            }
+          
 
-            .td3 {
-                font-size:16px;
-                font-weight:300;
-                border-style:solid;
-                border-width:thin;
-                text-transform:uppercase;
-                background-color:rgba(37, 255, 37, 0.841);
-                min-width:100%;
-                text-align:center;
-            }
-
-            .td4 {
-                min-width:25%;
-                text-align:left;
-                border-style:solid;
-                border-width:thin;
-            }
-
-
-            /*TABLE HOVER STATES */
-            .td1:hover {
-              
-              background-color:rgba(21, 21, 21, 0.14);
-          }
-            
-            .td2:hover {
-               
-                background-color:rgba(21, 21, 21, 0.14);
-            }
-
-            .td3:hover {
-                cursor: pointer;
-              background-color:rgb(208, 255, 0);
-          }
 
           /*TR Business */
             tr {
-                height:40px;
+                height:30px;
                 border-style: solid!important;
                 border-width: thin;
                 border-color:black;
@@ -102,7 +67,8 @@ body {
 
 .table-content {
     background-color:rgba(0, 140, 255, 0);
-    min-width:100%;
+    min-width:700px;
+    max-width:95%;
 }
 
 .table-webUpdates {
@@ -270,13 +236,13 @@ body {
   width: 98%;
   height: 90px;
     /* OVERFLOW SETTINGS */
-overflow:none;
+    overflow:none;
   overflow-y: hidden;
   background-color: #000000;
   outline-color: #FFFFBC;
   outline-offset: 0px;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: thin;
   vertical-align: auto;
 
 }
@@ -345,16 +311,12 @@ overflow:none;
 .imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
-  padding: 5px;
+  padding: 2.5px;
   margin-right: 10px;
   width: 100px;
   height:auto;
   float:left;
 
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
   /* END OF AHOY TICKER STYLE  */
@@ -404,7 +366,7 @@ button:hover {
 
 
 .superWrap-3col {
-    display:flex;
+    display:block;
     width:100%;
     padding:0px;
     height:95vh;
@@ -430,7 +392,6 @@ button:hover {
     
     .td-col-2 {
         min-width:140%;
-        background-color:rgb(228, 228, 228);
         border-style:solid;
         border-width:thin;
     }
@@ -443,54 +404,61 @@ button:hover {
         padding:0px;
         max-width:95%;
     }
-
-
-    
 }
 
-
 .section-Content {
-    background-color:white;
-    border-style:solid;
-    border-width:thin;
+    background-color:rgba(255, 14, 14, 0);
     max-height:100%;
-    min-width:700px;
+    margin-bottom:20px;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
 }
 
 .section-Updates {
-    background-color:rgb(200, 200, 200);
-    border-style:solid;
-    border-width:thin;
+    max-width:95%;
     max-height:100%;
 }
 
 .section-Roadmaps {
-    background-color:rgb(255, 159, 159);
-    border-style:solid;
-    border-width:thin;
+    background-color:rgba(255, 159, 159, 0);
     max-height:100%;
+    padding-bottom:150px;
 }
 
 .wrapSection-Updates-Roadmaps {
-    padding:20px;
     min-width:500px;
     width:100%;
+    padding:20px;
 }
 
 /*NEW TD TD TD TD TD */
 
 .td-col-1 {
-    width:100px;
+    
     background-color:white;
     border-style:solid;
     border-width:thin;
+    align-items: top;
 }
 
 .td-col-2 {
-    width:600px;
     background-color:rgb(228, 228, 228);
     border-style:solid;
     border-width:thin;
+    max-width:1152px;
+}
+
+.td-col-3 {
+    border-style:solid;
+    border-width:thin;
+    font-size:14px;
+}
+
+ul {
+    list-style: square;
+    padding:0px;
+    padding-left:20px;
 }
 
 
@@ -500,21 +468,21 @@ button:hover {
     border-style:solid;
     border-width:thin;
     text-align:center;
-    width:7.5%;
+    width:5.5%;
 }
 
 .td-col-2-content {
     border-style:solid;
     border-width:thin;
     text-align:left;
-    width:30%;
+    width:25%;
 }
 
 .td-col-3-content {
     border-style:solid;
     border-width:thin;
     text-align:left;
-    width:10%;
+    width:7.5%;
     text-decoration: none;
 }
 
@@ -533,4 +501,31 @@ button:hover {
     font-size:16px;
     text-transform: uppercase;
     padding-left:1.5px;
+}
+
+
+.updates-Splash {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-items: center;
+    text-align:center;
+    background-color: red;
+    margin: auto;
+
+}
+
+.updates-child {
+    width:500px;
+}
+
+.imgAhoyTop {
+    width:250px;
+    height:auto;
+}
+
+.header-text {
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
 }
