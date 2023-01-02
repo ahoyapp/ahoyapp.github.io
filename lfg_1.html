@@ -1,262 +1,314 @@
 <html>
     <head>
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel="stylesheet" href="lfg.css">
         <title>
-            Let's Go
+            Market
         </title>
-
-        <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800;900&display=swap'); </style>
-        <style>
-
-body {
-    font-family: 'Rubik', sans-serif; 
-    padding:5px;
-    background-color:rgb(255, 248, 240);
-}
-
-            td {
-                padding:10px;
-                
-                
-            }
-
-            .td1 {
-                text-transform:uppercase;
-                font-weight:900;
-                border-style:solid;
-                max-width:33%;
-                font-size:16px;
-                background-color:rgba(172, 255, 47, 0);
-                width:300px;
-                text-align:right;
-            }
-
-            .td2 {
-                font-size:16px;
-                font-weight:600;
-                border-style:solid;
-                text-transform:uppercase;
-                background-color:rgba(0, 128, 0, 0);
-                width:300px;
-            }
-
-            .td3 {
-                font-size:16px;
-                font-weight:300;
-                border-style:solid;
-                text-transform:uppercase;
-                background-color:rgba(0, 128, 0, 0);
-                width:100px;
-                text-align:center;
-            }
-
-
-            /*TABLE HOVER STATES */
-            .td1:hover {
-              
-              background-color:rgba(21, 21, 21, 0.14);
-          }
-            
-            .td2:hover {
-               
-                background-color:rgba(21, 21, 21, 0.14);
-            }
-
-            .td3:hover {
-                cursor: pointer;
-              background-color:rgb(208, 255, 0);
-          }
-
-          /*TR Business */
-            tr {
-                height:40px;
-                border-style: solid!important;
-                border-width: 1px;
-                border-color:black;
-            }
-
-            
-
-.mainMarketWrap {
-    width:90%;
-    height:88vh;
-    display:flex;
-    background-color:rgba(128, 0, 128, 0);
-    padding:10px;
-    align-items: center;
-    justify-content: center;
-    border-style:solid;
-}
-
-.mainMarketChildWrap {
-    /* width:920px;
-    max-width:1200px; */
-    min-height:200px;
-    justify-content: center;
-    background-color:rgba(255, 0, 0, 0);
-    border-style:solid;
-    border-width:1.5px;
-    overflow: scroll;
-    max-height:800px;
-
-
-}
-
-.topNavMain {
-    width:100%;
-    height:50px;
-    border-style:solid;
-
-
-}
-
-.buttonTopNav {
-    background-color:rgba(255, 255, 255, 0);
-    border-style:solid;
-    border-color:rgba(0, 0, 0, 0.646);
-    text-transform:uppercase;
-    font-family: 'Rubik', sans-serif; 
-    font-weight:600;
-    padding:10px;
-
-}
-
-.buttonTopNav:hover{
-    background-color: rgba(119, 119, 119, 0.426);
-    cursor: pointer;
-}
-
-.topNavMenu {
+        <script src="market.js"></script>
     
-    width:53%;
-    height:100px;
-    align-items: right;
-
-}
-
-        </style>
+        
+        <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800;900&display=swap'); </style>
+    
     </head>
-    <body>
+
+<body>
+
+<!-- THE HEADER -->
+<header>
         <div class="topNavMain">
             <div class="topNavMenu">
             <button class="buttonTopNav">1: Ahoy Library</button>
             <button class="buttonTopNav">2: My Library</button>
+           
+            <div class="searchWrap">
+                <div class="searchBar">
+                <!--  Search Bar  -->
+                    <div class="form-control">
+                     <label for="search"><i class="icon-search"></i></label>
+                    <input class="table-filter" type="search" data-table="advanced-web-table" placeholder="Search Ahoy">
+                        </div>
+                </div>
+            </div> 
+            
             <button class="buttonTopNav">3: Get More Tokens</button>
-            Search Bar {    .........              }
+            <button class="buttonTopNav">3: Get More Tokens</button>
+
         </div>
 
         </div>
+
+
+<div class="backpack">
+    <div class="tokenNumber">35</div>
+</div>
+<div class="lilSpacer">
+    <br>
+   
+</div>
+</header>
+<!-- START OF bodyWrap-->
+<div class="bodyWrap">
         <div class="mainMarketWrap">
         <div class="mainMarketChildWrap">
-        <table>
+       
+            <table id="ordering-table" class="advanced-web-table">
+                <thead>
+                    <tr>
+                        <td class="td-header">Artist</td>
+                        <td class="td-header">Song</td>
+                        <td class="td-header">Download</td>
+                        <td class="td-header">Add to Cart</td>
+                        <td class="td-header">Listen Now</td>
+                    </tr>
+                </thead>
+                <tbody>
             <tr>
                 <td class="td1">Samuel Dylan Witch</td>
                 <td class="td2">I've Seen Better Days</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
                
             </tr>
             <tr>
                 <td class="td1">Samuel Dylan Witch</td>
-                <td class="td2">If to Put Me on the Run</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
                
             </tr>
             <tr>
-                <td class="td1">Clones of Clarence</td>
-                <td class="td2">I believe in Love</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">Clones of Clarence</td>
-                <td class="td2">3AM</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">Clones of Clarence</td>
-                <td class="td2">Studio 507</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">Clones of Clarence</td>
-                <td class="td2">Thinking of You</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">YouthXL</td>
-                <td class="td2">Text your friends</td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">YouthXL</td>
-                <td class="td2">Summer Bummer </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr><tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr><tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr><tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
             <tr>
-                <td class="td1">The Tines</td>
-                <td class="td2">Edge of a Dream </td>
-                <td class="td3">Download mp3</td>
-                <td class="td3">Add to Library</td>
-                <td class="td3">ListenNow</td>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
             </tr>
+            <tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr><tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr>
+            <tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr>
+            <tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr><tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr>
+            <tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr>
+            <tr>
+                <td class="td1">Samuel Dylan Witch</td>
+                <td class="td2">I've Seen Better Days</td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="download.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="add.png"></a></td>
+                <td class="td3"><a href="#"><img class="graphicIcon" src="play.png"></a></td>
+               
+            </tr>
+            
+        </tbody>
         </table>
     </div>
     </div>
-    </body>
+</div>
+<footer class="leFooter">
+    <div class="playerWrap">
+    
+</footer>
+
+    <script>
+    // table search function
+    // Light Javascript Table Filter
+    // -by Chris Coyier
+    (function(document) {
+        'use strict';
+        var LightTableFilter = (function(Arr) {
+            var _input;
+            function _onInputEvent(e) {
+                _input = e.target;
+                var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+                Arr.forEach.call(tables, function(table) {
+                    Arr.forEach.call(table.tBodies, function(tbody) {
+                        Arr.forEach.call(tbody.rows, _filter);
+                    });
+                });
+            }
+            function _filter(row) {
+                var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+                row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+            return {
+                init: function() {
+                    var inputs = document.getElementsByClassName('table-filter');
+                    Arr.forEach.call(inputs, function(input) {
+                        input.oninput = _onInputEvent;
+                    });
+                }
+            };
+        })(Array.prototype);
+    
+        document.addEventListener('readystatechange', function() {
+            if (document.readyState === 'complete') {
+                LightTableFilter.init();
+            }
+        });
+    })(document);
+        </script>
+
+</body>
 </html>
